@@ -5,7 +5,7 @@
     </q-layout-header>
 
     <q-page-container>
-      <router-view/>
+      <router-view id="layout"/>
     </q-page-container>
   </q-layout>
 </template>
@@ -19,6 +19,9 @@
   }
 </script>
 
-<style>
-
+<style scoped>
+  #layout {
+    background-color: #00C1DA;
+    background-image: linear-gradient(#00C1DA, #0086D4);
+  }
 </style>

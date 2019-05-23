@@ -12,9 +12,3 @@ export default {
   name: 'PageIndex'
 }
 </script>
-<style scoped>
-  #pedr {
-    background-color: #00C1DA;
-    background-image: linear-gradient(#00C1DA, #0086D4);
-  }
-</style>

@@ -1,6 +1,6 @@
 <template>
-  <q-page class="flex flex-center">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
+  <q-page id="pedr">
+    <div>This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
   </q-page>
 </template>
 
@@ -12,3 +12,9 @@ export default {
   name: 'PageIndex'
 }
 </script>
+<style scoped>
+  #pedr {
+    background-color: #00C1DA;
+    background-image: linear-gradient(#00C1DA, #0086D4);
+  }
+</style>

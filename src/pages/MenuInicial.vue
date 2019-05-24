@@ -1,14 +1,41 @@
 <template>
-  <q-page id="pedr">
-    <div>This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
-  </q-page>
+  <Pagina>
+
+    <Linha linha="row justify-around">
+
+      <Coluna coluna="col-5 justify-around">
+        <PVImagem imagem="statics/imgs/pg03/btnOqueTev.png"/>
+      </Coluna>
+
+      <Coluna coluna="col-5 justify-around">
+        <PVImagem imagem="statics/imgs/pg03/btnQuandoSuspeitar.png"/>
+      </Coluna>
+    </Linha>
+
+
+    <Linha linha="row justify-around">
+
+      <Coluna coluna="col-5 justify-around">
+        <PVImagem imagem="statics/imgs/pg03/btnComoPrevenir.png"/>
+      </Coluna>
+
+      <Coluna coluna="col-5 justify-around">
+        <PVImagem imagem="statics/imgs/pg03/btnComoPrevenir.png"/>
+      </Coluna>
+    </Linha>
+
+  </Pagina>
 </template>
 
-<style>
-</style>
-
 <script>
-export default {
-  name: 'PageIndex'
-}
+  import PVImagem from "../components/PVImagem";
+  import Pagina from "../components/Shared/Pagina";
+  import Linha from "../components/Shared/Linha";
+  import Coluna from "../components/Shared/Coluna";
+
+  export default {
+    name: 'PageIndex',
+    components: {Coluna, Linha, Pagina, PVImagem}
+  }
 </script>
+

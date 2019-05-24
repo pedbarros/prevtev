@@ -1,6 +1,6 @@
 <template>
   <q-page padding>
-    <div class="q-ma-lg-lg">
+    <div :class="classePagina">
       <slot></slot>
     </div>
   </q-page>
@@ -8,6 +8,14 @@
 
 <script>
   export default {
-    name: "Pagina"
+    name: "Pagina",
+    props:{
+        classePagina:{
+            type: String,
+            default(){
+                return "q-ma-lg-lg"
+            }
+        }
+    }
   }
 </script>

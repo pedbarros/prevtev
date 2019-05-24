@@ -5,7 +5,8 @@ const routes = [
     component: () => import('layouts/MyLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Tev.vue') },
-      { path: 'menu-inicial', name:'MenuInicial',  component: () => import('pages/MenuInicial.vue') }
+      { path: 'menu-inicial', name:'MenuInicial',  component: () => import('pages/MenuInicial.vue') },
+      { path: 'alarme-medicacao', name:'AlarmeMedicacao',  component: () => import('pages/AlarmeMedicacao.vue') }
     ]
   },
 

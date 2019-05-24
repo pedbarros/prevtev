@@ -10,10 +10,7 @@
 
     <Linha>
       <Coluna>
-        <PVImagem id="test" widht="10px" @click="clik" imagem="statics/imgs/pg02/corpoHumanoTev.png"></PVImagem> 
-      <!-- <div class="scroll overflow-hidden" style="height: 30%">
-        <PVImagem @click="clik" imagem="statics/imgs/pg02/corpoHumanoTev.png"></PVImagem>
-      </div>-->
+        <PVImagem id="test" widht="10px" @click="clik" imagem="statics/imgs/pg02/corpoHumanoTev.png"></PVImagem>
       </Coluna>
     </Linha>
 

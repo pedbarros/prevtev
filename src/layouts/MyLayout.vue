@@ -11,7 +11,6 @@
 </template>
 
 <script>
-
   import PVToolbar from "../components/PVToolbar";
   export default {
     name: 'MyLayout',

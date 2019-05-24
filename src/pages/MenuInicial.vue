@@ -24,6 +24,19 @@
       </Coluna>
     </Linha>
 
+
+
+    <Linha linha="row justify-around">
+
+      <Coluna coluna="col-5 justify-around">
+        <PVImagem imagem="statics/imgs/pg03/btnComoPrevenir.png"/>
+      </Coluna>
+
+      <Coluna coluna="col-5 justify-around">
+        <PVImagem @click="$router.push( { name: 'AlarmeMedicacao' } )" imagem="statics/imgs/pg03/btnAlarmeMedicacao.png"/>
+      </Coluna>
+    </Linha>
+
   </Pagina>
 </template>
 

@@ -9,9 +9,15 @@
 
     <Linha>
       <Coluna>
-        <PVImagem imagem="statics/imgs/alarme/textoAlarme.png"/>
+        <PVImagem imagem="statics/imgs/alarme/textoAlarme.png" class="q-pl-lg q-pr-lg"/>
       </Coluna>
     </Linha>
+
+    <div class="q-ml-lg q-mr-lg">
+      <div id="pedo">
+        <q-input v-model="text" label="Standard" />
+      </div>
+    </div>
 
 
   </Pagina>
@@ -28,12 +34,18 @@
 
     components: {PVImagem, Coluna, Linha, Pagina},
 
-    data(){
-      return{
-          text: ''
+    data() {
+      return {
+        text: ''
       }
     }
 
   }
 </script>
-
+<style scoped>
+  #pedo {
+    background-color: #7887C4;
+    height: 300px;
+    max-width: 100%;
+  }
+</style>

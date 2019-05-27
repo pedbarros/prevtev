@@ -6,6 +6,7 @@ const routes = [
     children: [
       { path: '', component: () => import('pages/Tev.vue') },
       { path: 'menu-inicial', name:'MenuInicial',  component: () => import('pages/MenuInicial.vue') },
+      { path: 'o-que-tev', name:'OQueTEV',  component: () => import('pages/OQueTEV.vue') },
       { path: 'alarme-medicacao', name:'AlarmeMedicacao',  component: () => import('pages/AlarmeMedicacao.vue') }
     ]
   },

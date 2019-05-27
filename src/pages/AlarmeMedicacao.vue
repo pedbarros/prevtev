@@ -1,24 +1,20 @@
 <template>
   <Pagina classePagina="full-height" :paddingPage="false">
-    <Linha>
-      <Coluna>
-        <PVImagem imagem="statics/imgs/alarme/tituloAlarme.png"/>
-      </Coluna>
-    </Linha>
 
-
+    <Titulo imagem="statics/imgs/alarme/tituloAlarme.png"/>
     <Linha>
       <Coluna>
         <PVImagem imagem="statics/imgs/alarme/textoAlarme.png" class="q-pl-lg q-pr-lg"/>
       </Coluna>
     </Linha>
 
-    <div class="q-ml-lg q-mr-lg">
-      <div id="pedo">
-        <q-input v-model="text" label="Standard" />
-      </div>
-    </div>
-
+    <Linha class="q-ml-lg q-mr-lg">
+      <Coluna>
+        <Container cor="#7887C4">
+          <q-input v-model="text" style="background-color: white; color: #000;" label="Medicamento"/>
+        </Container>
+      </Coluna>
+    </Linha>
 
   </Pagina>
 </template>
@@ -28,11 +24,13 @@
   import Linha from "../components/Shared/Linha";
   import Coluna from "../components/Shared/Coluna";
   import PVImagem from "../components/PVImagem";
+  import Titulo from "../components/Shared/Titulo";
+  import Container from "../components/Shared/Container";
 
   export default {
     name: "Alarme",
 
-    components: {PVImagem, Coluna, Linha, Pagina},
+    components: {Container, Titulo, PVImagem, Coluna, Linha, Pagina},
 
     data() {
       return {
@@ -42,10 +40,3 @@
 
   }
 </script>
-<style scoped>
-  #pedo {
-    background-color: #7887C4;
-    height: 300px;
-    max-width: 100%;
-  }
-</style>

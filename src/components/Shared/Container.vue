@@ -1,5 +1,5 @@
 <template>
-  <div :style="{ backgroundColor: cor, height: '300px', maxWidth: '100%' }">
+  <div :style="{ backgroundColor: cor, height: '200px', maxWidth: '100%' }">
     <slot></slot>
   </div>
 </template>

@@ -2,20 +2,24 @@
 
 module.exports = function (ctx) {
   return {
-    // app plugins (/src/plugins)
-    plugins: [
+    // app boot (/src/boot)
+    boot: [
       'axios'
     ],
     css: [
       'app.styl'
     ],
+
     extras: [
-      ctx.theme.mat ? 'roboto-font' : null,
-      'material-icons' // optional, you are not bound to it
-      // 'ionicons',
-      // 'mdi',
-      // 'fontawesome'
+      'roboto-font',
+      'material-icons', // optional, you are not bound to it
+      // 'ionicons-v4',
+      // 'mdi-v3',
+      'fontawesome-v5',
+      // 'eva-icons'
     ],
+
+
     supportIE: true,
     build: {
       scopeHoisting: true,
@@ -34,10 +38,12 @@ module.exports = function (ctx) {
     },
     // framework: 'all' --- includes everything; for dev only!
     framework: {
+      // all: true, // --- includes everything; for dev only!
+
       components: [
         'QLayout',
-        'QLayoutHeader',
-        'QLayoutDrawer',
+        'QHeader',
+        'QDrawer',
         'QPageContainer',
         'QPage',
         'QToolbar',
@@ -45,22 +51,70 @@ module.exports = function (ctx) {
         'QBtn',
         'QIcon',
         'QList',
-        'QListHeader',
         'QItem',
-        'QItemMain',
-        'QItemSide',
-        'QInput'
+        'QItemSection',
+        'QItemLabel',
+        'QScrollArea',
+        'QField',
+        'QDate',
+        'QPopupProxy',
+        'QCard',
+        'QCardSection',
+        'QCardActions',
+        'QInput',
+        'QVideo',
+        'QImg',
+
+
+        'QBadge',
+        'QAvatar',
+        'QChip',
+        'QSeparator',
+
+
+        'QCarousel',
+        'QCarouselControl',
+        'QCarouselSlide',
+
+        'QBanner',
+        'QSpace',
+
+        'QFab',
+        'QFabAction',
+
+        'QPageSticky',
+        'QDialog',
+
+
+        'QTable',
+        'QTh',
+        'QTr',
+        'QTd',
+
+        'QSelect'
       ],
+
       directives: [
-        'Ripple'
+        'Ripple',
+        'ClosePopup'
       ],
+
       // Quasar plugins
       plugins: [
-        'Notify'
-      ]
-      // iconSet: ctx.theme.mat ? 'material-icons' : 'ionicons'
-      // i18n: 'de' // Quasar language
+        'Notify',
+        'Loading',
+        'BottomSheet'
+      ],
+      config: {
+        notify: { /* Notify defaults */ },
+        loading: { /* Loading defaults */ }
+      }
+
+      // iconSet: 'ionicons-v4'
+      // lang: 'de' // Quasar language
     },
+
+
     // animations: 'all' --- includes all animations
     animations: [],
     ssr: {
@@ -124,7 +178,7 @@ module.exports = function (ctx) {
         // protocol: 'myapp://path',
 
         // Window only
-        // win32metadata: { ... }
+        // win32metadata: { ... }framework
       },
       builder: {
         // https://www.electron.build/configuration/configuration

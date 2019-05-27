@@ -2,20 +2,21 @@
   <Pagina classePagina="full-height" :paddingPage="false">
 
     <Titulo imagem="statics/imgs/alarme/tituloAlarme.png"/>
-    <Linha>
-      <Coluna>
-        <PVImagem imagem="statics/imgs/alarme/textoAlarme.png" class="q-pl-lg q-pr-lg"/>
-      </Coluna>
-    </Linha>
 
-    <Linha class="q-ml-lg q-mr-lg">
-      <Coluna>
-        <Container cor="#7887C4">
-          <q-input v-model="text" style="background-color: white; color: #000;" label="Medicamento"/>
-        </Container>
-      </Coluna>
-    </Linha>
+    <div class="q-pl-sm q-pr-sm">
+      <Linha>
+        <Coluna>
+          <PVImagem imagem="statics/imgs/alarme/textoAlarme.png"/>
+        </Coluna>
+      </Linha>
 
+      <Container cor="#7887C4" class="q-pa-sm">
+        <q-input color="grey-1" rounded outlined v-model="text" label="Medicamento" />
+        <q-input rounded outlined v-model="text" label="Dias" />
+        <q-input rounded outlined v-model="text" label="Horário" />
+      </Container>
+
+    </div>
   </Pagina>
 </template>
 

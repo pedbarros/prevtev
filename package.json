@@ -10,12 +10,13 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
+    "@quasar/app": "^1.0.0-rc.4",
     "@quasar/extras": "^1.1.2",
     "axios": "^0.18.0",
-    "quasar": "^1.0.0-rc.2"
+    "quasar": "^1.0.0-rc.2",
+    "upgrade": "^1.1.0"
   },
   "devDependencies": {
-    "quasar-cli": "^0.17.0",
     "strip-ansi": "=3.0.1"
   },
   "engines": {

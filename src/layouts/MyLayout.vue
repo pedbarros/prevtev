@@ -1,11 +1,12 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-layout-header>
+    <q-header elevated>
+
       <PVToolbar imagem="statics/imgs/logo-toolbar.png"></PVToolbar>
-    </q-layout-header>
+    </q-header>
 
     <q-page-container>
-      <router-view id="layout"/>
+      <router-view  id="layout" />
     </q-page-container>
   </q-layout>
 </template>

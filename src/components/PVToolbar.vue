@@ -1,5 +1,5 @@
 <template>
-  <q-toolbar>
+  <q-toolbar class="bg-primary">
 
     <q-btn flat round dense icon="arrow_back" @click="voltar"/>
 

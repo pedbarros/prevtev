@@ -1,7 +1,7 @@
 <template>
   <q-toolbar>
 
-    <q-btn flat round dense icon="arrow_back" @click="$router.go(-1)" />
+    <q-btn flat round dense icon="arrow_back" @click="voltar"/>
 
     <q-toolbar-title class="text-center">
       <img :src="imagem">
@@ -10,13 +10,19 @@
 </template>
 
 <script>
-    export default {
-        name: "PVToolbar",
-        props:{
-            imagem:{
-              type: String,
-              required: true
-            }
-        }
+  export default {
+    name: "PVToolbar",
+    props: {
+      imagem: {
+        type: String,
+        required: true
+      }
+    },
+
+    methods:{
+      voltar(){
+        this.$router.go(-1)
+      }
     }
+  }
 </script>

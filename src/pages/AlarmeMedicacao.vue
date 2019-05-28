@@ -12,8 +12,9 @@
 
       <Container cor="#7887C4" class="q-pa-sm">
         <q-input color="grey-1" rounded outlined v-model="text" label="Medicamento" />
-        <q-input rounded outlined v-model="text" label="Dias" />
-        <q-input rounded outlined v-model="text" label="Horário" />
+        <q-input color="grey-1" rounded outlined v-model="text" label="Dias" />
+        <q-input color="grey-1" rounded outlined v-model="text" label="Horário" />
+        <q-btn color="primary" class="full-width q-mt-md" label="Salvar" />
       </Container>
 
     </div>

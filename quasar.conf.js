@@ -4,7 +4,8 @@ module.exports = function (ctx) {
   return {
     // app boot (/src/boot)
     boot: [
-      'axios'
+      'axios',
+      'sqlite'
     ],
     css: [
       'app.styl'
@@ -91,7 +92,8 @@ module.exports = function (ctx) {
         'QTr',
         'QTd',
 
-        'QSelect'
+        'QSelect',
+        'QTime'
       ],
 
       directives: [
@@ -101,6 +103,7 @@ module.exports = function (ctx) {
 
       // Quasar plugins
       plugins: [
+        'LocalStorage',
         'Notify',
         'Loading',
         'BottomSheet'

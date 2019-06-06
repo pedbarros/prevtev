@@ -26,12 +26,16 @@
   import PVImagem from "../components/PVImagem";
   import Pagina from "../components/Shared/Pagina";
   import Titulo from "../components/Shared/Titulo";
+  import { LocalStorage } from 'quasar'
 
   export default {
     name: "Tev",
     components: {Titulo, Pagina, PVImagem, Coluna, Linha},
     methods: {
-      clik(value) {
+      clik() {
+        let v = JSON.stringify([{nome: 'pedro', idade: 123}])
+        LocalStorage.set('teste', v)
+        let value = LocalStorage.getItem('teste')
         console.log(value)
       }
     }

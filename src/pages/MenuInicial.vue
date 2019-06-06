@@ -1,13 +1,14 @@
 <template>
   <Pagina>
     <br><br>
+    {{ mostrarVideo }}
     <Linha linha="row justify-around">
       <Coluna coluna="col-5 justify-around">
         <PVImagem @click="$router.push( { name: 'OQueTEV' } )" imagem="statics/imgs/menuinicial/btnOqueTev.png"/>
       </Coluna>
 
       <Coluna coluna="col-5 justify-around">
-        <PVImagem imagem="statics/imgs/menuinicial/btnQuandoSuspeitar.png"/>
+        <PVImagem @click="openVideo()" imagem="statics/imgs/menuinicial/btnQuandoSuspeitar.png"/>
       </Coluna>
     </Linha>
 
@@ -30,11 +31,14 @@
       </Coluna>
 
       <Coluna coluna="col-5 justify-around">
-        <PVImagem @click="$router.push( { name: 'AlarmeMedicacao' } )" imagem="statics/imgs/menuinicial/btnAlarmeMedicacao.png"/>
+        <PVImagem @click="$router.push( { name: 'AlarmeMedicacao' } )"
+                  imagem="statics/imgs/menuinicial/btnAlarmeMedicacao.png"/>
       </Coluna>
     </Linha>
 
-
+    <video v-model="mostrarVideo" width="0" height="0" controls id="myvideo">
+      <source src="statics/videos/oceans.mp4"></source>
+    </video>
   </Pagina>
 </template>
 
@@ -43,17 +47,44 @@
   import Pagina from "../components/Shared/Pagina";
   import Linha from "../components/Shared/Linha";
   import Coluna from "../components/Shared/Coluna";
-  import { Notify } from 'quasar'
+  import {Notify} from 'quasar'
 
   export default {
     name: 'MenuInicial',
 
     components: {Coluna, Linha, Pagina, PVImagem},
 
-    mounted(){
-      let { msg } = this.$route.query
+    data(){
+      return {
+        mostrarVideo: ''
+      }
+    },
+
+    mounted() {
+      let {msg} = this.$route.query
       if (msg) {
         // Notify.create('Bem vindo ao PrevTev!!!!')
+      }
+    },
+
+    methods: {
+      openVideo() {
+        // this.mostrarVideo = true
+        let elem = document.getElementById("myvideo");
+        if (elem.requestFullscreen) {
+          elem.requestFullscreen();
+        }
+
+        if (elem.exitFullscreen) {
+          elem.exitFullscreen();
+          alert("The audio has ended");
+        }
+
+        /*document.addEventListener("fullscreenchange", function() {
+          alert("The audio has ended");
+        });*/
+
+
       }
     }
   }

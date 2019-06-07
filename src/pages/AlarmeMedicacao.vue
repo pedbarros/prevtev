@@ -117,16 +117,33 @@
 
         let configuracoesDoAlarme = medicamentosStorage2.map(medicamento => {
           return medicamento.horarios.map((horario, indice) => {
+            var today = new Date();
+            var tomorrow = new Date();
+            tomorrow.setDate(today.getDate()+1);
+            tomorrow.setHours(6);
+            tomorrow.setMinutes(0);
+            tomorrow.setSeconds(0);
+            var tomorrow_at_6_am = new Date(tomorrow);
+
             return {
               id: indice,
               title: 'TOMAR MEDICAÇÃO!',
               text: `O médicamento ${medicamento.nome} deve ser tomado neste exato momento!!`,
-              trigger: {every: { hour: Number(horario.hora), minute:  Number(horario.minuto )}}
+              //firstAt: monday,
+              firstAt: tomorrow_at_6_am,
+              every: "day" // "minute", "hour", "week", "month", "year"
+              // every: { hour: Number(horario.hora), minute:  Number(horario.minuto )}
+              //trigger: {every: { hour: Number(horario.hora), minute:  Number(horario.minuto )}}
             }
           });
         })
 
         this.$q.cordova.plugins.notification.local.schedule(configuracoesDoAlarme.flat())
+
+
+        this.$q.cordova.plugins.notification.local.on('trigger', (e) => {
+          alert(e)
+        })
 
         /*   let configuracoesDoAlarme = medicamentosStorage2.map( medicamento => {
              return medicamento.horarios.map((horario, indice) => {

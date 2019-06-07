@@ -76,6 +76,18 @@
       },
     },
 
+   /* mounted(){
+
+      this.$q.cordova.plugins.notification.local.schedule({
+        id: 1,
+        title: 'My first notification',
+        text: 'First notification test one',
+        trigger: {every: {hour: 14, minute: 6}}
+      })
+
+      alert("ok")
+    },*/
+
     methods: {
       clearFields() {
         /*const {item_compra, produtoSelecionado, item} = this.$options.data.call(this)
@@ -84,10 +96,15 @@
         this.produtoSelecionado = produtoSelecionado*/
       },
       addMedicamento() {
+        if (this.medicamento.horarios.some(e => ( e.hora === this.hora && e.minuto === this.minuto )))
+          this.$q.notify({position: 'top-right', textColor: 'warning', message: `Esse horário já foi agendado para este medicamento!`})
+        else
+          this.$q.notify({position: 'top-right', message: `Horário do medicamento adicionado com sucesso!`})
+
         let horario = {hora: this.hora, minuto: this.minuto}
         this.medicamento.horarios.push(horario)
 
-        this.$q.notify({position: 'top-right', message: `Horário do medicamento adicionado com sucesso!`})
+
       },
 
       salvarAgendamento() {
@@ -115,23 +132,18 @@
 
         let configuracoesDoAlarme = medicamentosStorage2.map(medicamento => {
           return medicamento.horarios.map((horario, indice) => {
-            var today = new Date();
-            var tomorrow = new Date();
-            tomorrow.setDate(today.getDate() + 1);
-            tomorrow.setHours(6);
-            tomorrow.setMinutes(0);
-            tomorrow.setSeconds(0);
-            var tomorrow_at_6_am = new Date(tomorrow);
+            let date = new Date()
+            date.setDate(date.getDate()+1);
+            date.setHours(13);
+            date.setMinutes(50);
+            date.setSeconds(0);
 
             return {
               id: indice,
               title: 'TOMAR MEDICAÇÃO!',
               text: `O médicamento ${medicamento.nome} deve ser tomado neste exato momento!!`,
-              //firstAt: monday,
-              firstAt: tomorrow_at_6_am,
-              every: "day" // "minute", "hour", "week", "month", "year"
-              // every: { hour: Number(horario.hora), minute:  Number(horario.minuto )}
-              //trigger: {every: { hour: Number(horario.hora), minute:  Number(horario.minuto )}}
+              at: date,
+              every: 'day'
             }
           });
         })
@@ -139,9 +151,8 @@
         this.$q.cordova.plugins.notification.local.schedule(configuracoesDoAlarme.flat())
 
 
-        this.$q.cordova.plugins.notification.local.on('trigger', (e) => {
-          alert(e)
-        })
+        this.$q.notify({position: 'top-right', message: `Horários do medicamento serão alertados!`})
+        this.$router.go(-1)
 
         /*   let configuracoesDoAlarme = medicamentosStorage2.map( medicamento => {
              return medicamento.horarios.map((horario, indice) => {

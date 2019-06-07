@@ -23,23 +23,27 @@
         </Coluna>
       </Linha>
 
+      <br>
       <Linha>
         <Coluna>
           <PVImagem imagem="statics/imgs/cuidados-casa/informacao03.png"/>
         </Coluna>
       </Linha>
 
+      <br>
       <Linha>
         <Coluna>
           <PVImagem imagem="statics/imgs/cuidados-casa/informacao04.png"/>
         </Coluna>
       </Linha>
 
+      <br>
       <Linha>
         <Coluna>
           <PVImagem imagem="statics/imgs/cuidados-casa/informacao05.png"/>
         </Coluna>
       </Linha>
+      <br>
 
       <Linha>
         <Coluna>

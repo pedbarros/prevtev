@@ -1,25 +1,24 @@
 <template>
   <Pagina>
     <br><br>
-    {{ mostrarVideo }}
     <Linha linha="row justify-around">
       <Coluna coluna="col-5 justify-around">
-        <PVImagem @click="$router.push( { name: 'OQueTEV' } )" imagem="statics/imgs/menuinicial/btnOqueTev.png"/>
+        <PVImagem @click="$router.push( { name: 'TelaOQueTEV' } )" imagem="statics/imgs/menuinicial/btnOqueTev.png"/>
       </Coluna>
 
       <Coluna coluna="col-5 justify-around">
-        <PVImagem @click="openVideo()" imagem="statics/imgs/menuinicial/btnQuandoSuspeitar.png"/>
+        <PVImagem @click="$router.push( { name: 'TelaQuandoSuspeitar' } )" imagem="statics/imgs/menuinicial/btnQuandoSuspeitar.png"/>
       </Coluna>
     </Linha>
 
     <br><br>
     <Linha linha="row justify-around">
       <Coluna coluna="col-5 justify-around">
-        <PVImagem imagem="statics/imgs/menuinicial/btnComoPrevenir.png"/>
+        <PVImagem @click="$router.push( { name: 'TelaComoPrevenir' } )" imagem="statics/imgs/menuinicial/btnComoPrevenir.png"/>
       </Coluna>
 
       <Coluna coluna="col-5 justify-around">
-        <PVImagem imagem="statics/imgs/menuinicial/btnConsequencias.png"/>
+        <PVImagem  @click="$router.push( { name: 'TelaConsequencias' } )" imagem="statics/imgs/menuinicial/btnConsequencias.png"/>
       </Coluna>
     </Linha>
 
@@ -27,7 +26,7 @@
     <br><br>
     <Linha linha="row justify-around">
       <Coluna coluna="col-5 justify-around">
-        <PVImagem imagem="statics/imgs/menuinicial/btnCuidadosCasa.png"/>
+        <PVImagem @click="$router.push( { name: 'TelaCuidadosCasa' } )" imagem="statics/imgs/menuinicial/btnCuidadosCasa.png"/>
       </Coluna>
 
       <Coluna coluna="col-5 justify-around">
@@ -60,11 +59,12 @@
       }
     },
 
+    created(){
+      console.log("created")
+    },
+
     mounted() {
-      let {msg} = this.$route.query
-      if (msg) {
-        // Notify.create('Bem vindo ao PrevTev!!!!')
-      }
+      console.log("mounted")
     },
 
     methods: {
@@ -78,12 +78,6 @@
           elem.exitFullscreen();
           alert("The audio has ended");
         }
-
-        /*document.addEventListener("fullscreenchange", function() {
-          alert("The audio has ended");
-        });*/
-
-
       }
     }
   }

@@ -6,7 +6,11 @@ const routes = [
     children: [
       { path: '', component: () => import('pages/Tev.vue') },
       { path: 'menu-inicial', name:'MenuInicial',  component: () => import('pages/MenuInicial.vue') },
-      { path: 'o-que-tev', name:'OQueTEV',  component: () => import('pages/OQueTEV.vue') },
+      { path: 'o-que-tev', name:'TelaOQueTEV',  component: () => import('pages/TelaOQueTEV.vue') },
+      { path: 'quando-suspeitar', name:'TelaQuandoSuspeitar',  component: () => import('pages/TelaQuandoSuspeitar.vue') },
+      { path: 'como-prevenir', name:'TelaComoPrevenir',  component: () => import('pages/TelaComoPrevenir.vue') },
+      { path: 'consequencias', name:'TelaConsequencias',  component: () => import('pages/TelaConsequencias.vue') },
+      { path: 'cuidados-casa', name:'TelaCuidadosCasa',  component: () => import('pages/TelaCuidadosCasa.vue') },
       { path: 'alarme-medicacao', name:'AlarmeMedicacao',  component: () => import('pages/AlarmeMedicacao.vue') }
     ]
   },

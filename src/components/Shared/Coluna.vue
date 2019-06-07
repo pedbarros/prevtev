@@ -5,14 +5,15 @@
 </template>
 
 <script>
-    export default {
-        name: "Coluna",
-        props: {
-          coluna: {
-              default(){
-                 return "col-12"
-              }
-          }
+  export default {
+    name: "Coluna",
+    props: {
+      coluna: {
+        default() {
+          return "col-12"
         }
+      }
     }
+  }
 </script>
+

@@ -11,7 +11,7 @@
 
     <Linha>
       <Coluna>
-        <PVImagem @click="$router.push( { name: 'MenuInicial', query: { msg: true }  } )"
+        <PVImagem @click="$router.push( { name: 'MenuInicial'  } )"
                   imagem="statics/imgs/tev/btnTev.png"/>
       </Coluna>
     </Linha>

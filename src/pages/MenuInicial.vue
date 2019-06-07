@@ -19,7 +19,7 @@
       </Coluna>
 
       <Coluna coluna="col-5 justify-around">
-        <PVImagem imagem="statics/imgs/menuinicial/btnComoPrevenir.png"/>
+        <PVImagem imagem="statics/imgs/menuinicial/btnConsequencias.png"/>
       </Coluna>
     </Linha>
 
@@ -27,7 +27,7 @@
     <br><br>
     <Linha linha="row justify-around">
       <Coluna coluna="col-5 justify-around">
-        <PVImagem imagem="statics/imgs/menuinicial/btnComoPrevenir.png"/>
+        <PVImagem imagem="statics/imgs/menuinicial/btnCuidadosCasa.png"/>
       </Coluna>
 
       <Coluna coluna="col-5 justify-around">
@@ -36,7 +36,7 @@
       </Coluna>
     </Linha>
 
-    <video v-model="mostrarVideo" width="0" height="0" controls id="myvideo">
+    <video width="0" height="0" controls id="myvideo">
       <source src="statics/videos/oceans.mp4"></source>
     </video>
   </Pagina>
@@ -69,7 +69,6 @@
 
     methods: {
       openVideo() {
-        // this.mostrarVideo = true
         let elem = document.getElementById("myvideo");
         if (elem.requestFullscreen) {
           elem.requestFullscreen();

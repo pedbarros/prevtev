@@ -1,5 +1,12 @@
 <template>
-  <img :src="imagem" @click="$emit('click', $event)">
+ <!-- <img :src="imagem" @click="$emit('click', $event)"> -->
+
+  <q-img
+    :src="imagem"
+    spinner-color="white"
+    @click="$emit('click', $event)"
+  />
+
 </template>
 
 <script>

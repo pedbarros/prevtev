@@ -39,7 +39,6 @@
         <q-btn color="primary" class="full-width q-mt-md" @click="salvarAgendamento()" label="Salvar"
                :disable="!validarCamposAlarme"/>
       </Container>
-
     </div>
   </Pagina>
 </template>
@@ -114,12 +113,11 @@
         let medicamentosStorage2 = JSON.parse(this.$q.localStorage.getItem('medicamentos'))
 
 
-
         let configuracoesDoAlarme = medicamentosStorage2.map(medicamento => {
           return medicamento.horarios.map((horario, indice) => {
             var today = new Date();
             var tomorrow = new Date();
-            tomorrow.setDate(today.getDate()+1);
+            tomorrow.setDate(today.getDate() + 1);
             tomorrow.setHours(6);
             tomorrow.setMinutes(0);
             tomorrow.setSeconds(0);

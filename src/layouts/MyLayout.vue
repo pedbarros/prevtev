@@ -1,18 +1,18 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-
       <PVToolbar imagem="statics/imgs/logo-toolbar.png"></PVToolbar>
     </q-header>
 
     <q-page-container>
-      <router-view  id="layout" />
+        <router-view id="layout"/>
     </q-page-container>
   </q-layout>
 </template>
 
 <script>
   import PVToolbar from "../components/PVToolbar";
+
   export default {
     name: 'MyLayout',
     components: {PVToolbar},

@@ -34,10 +34,6 @@
                   imagem="statics/imgs/menuinicial/btnAlarmeMedicacao.png"/>
       </Coluna>
     </Linha>
-
-    <video width="0" height="0" controls id="myvideo">
-      <source src="statics/videos/oceans.mp4"></source>
-    </video>
   </Pagina>
 </template>
 

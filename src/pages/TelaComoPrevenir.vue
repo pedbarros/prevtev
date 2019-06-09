@@ -1,6 +1,6 @@
 <template>
   <Pagina classePagina="full-height" :paddingPage="false">
-    <Titulo imagem="statics/imgs/como-prevenir/tituloComoPrevenir.png"/>
+    <Titulo imagem="statics/imgs/como-prevenir/002.png"/>
 
     <div class="q-pl-sm q-pr-sm">
       <Linha>

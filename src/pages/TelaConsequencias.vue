@@ -1,23 +1,23 @@
 <template>
   <Pagina classePagina="full-height" :paddingPage="false">
-    <Titulo imagem="statics/imgs/consequencias/tituloConsequencias.png"/>
+    <Titulo imagem="statics/imgs/consequencias/002.png"/>
 
     <div class="q-pl-sm q-pr-sm">
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/consequencias/QuaisConsequencias.png"/>
+          <PVImagem imagem="statics/imgs/consequencias/003.png"/>
         </Coluna>
       </Linha>
 
       <Container cor="#7887C4" altura="auto" class="q-pa-sm">
         <Coluna>
-          <PVImagem @click="executeAudio()" imagem="statics/imgs/consequencias/imgConsequencias1.png"/>
+          <PVImagem @click="executeAudio('statics/audios/o-que-e-trombose-venosa-profunda.m4a')" imagem="statics/imgs/consequencias/005.png"/>
         </Coluna>
       </Container>
 
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/consequencias/consequenciasEmbolia.png"/>
+          <PVImagem imagem="statics/imgs/consequencias/007.png"/>
         </Coluna>
       </Linha>
       <br>
@@ -55,24 +55,3 @@
 
   }
 </script>
-
-<style scoped>
-  #idContainerVideo {
-    position: relative;
-    text-align: center;
-  }
-
-  .centered {
-    width: 100%;
-    height: 80%;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  video {
-    width: 80% !important;
-    height: 50% !important;
-  }
-</style>

@@ -11,7 +11,8 @@ const routes = [
       { path: 'como-prevenir', name:'TelaComoPrevenir',  component: () => import('pages/TelaComoPrevenir.vue') },
       { path: 'consequencias', name:'TelaConsequencias',  component: () => import('pages/TelaConsequencias.vue') },
       { path: 'cuidados-casa', name:'TelaCuidadosCasa',  component: () => import('pages/TelaCuidadosCasa.vue') },
-      { path: 'alarme-medicacao', name:'AlarmeMedicacao',  component: () => import('pages/AlarmeMedicacao.vue') }
+      { path: 'alarme-medicacao', name:'AlarmeMedicacao',  component: () => import('pages/AlarmeMedicacao.vue') },
+      { path: 'lista-medicamentos', name:'ListaMedicamentos',  component: () => import('pages/ListaMedicamentos.vue') }
     ]
   },
 

@@ -1,7 +1,8 @@
 <template>
   <q-toolbar class="bg-primary">
 
-    <q-btn flat round dense icon="arrow_back" @click="voltar"/>
+   <q-btn flat round dense icon="arrow_back" @click="voltar"/>
+    <!-- <img src="statics/imgs/voltar.png"> -->
 
     <q-toolbar-title class="text-center">
       <img :src="imagem">

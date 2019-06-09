@@ -1,59 +1,59 @@
 <template>
   <Pagina classePagina="full-height" :paddingPage="false">
 
-    <Titulo imagem="statics/imgs/cuidados-casa/tituloCuidadoCasa.png"/>
+    <Titulo imagem="statics/imgs/cuidados-casa/002.png"/>
 
     <div class="q-pl-sm q-pr-sm">
       <Container cor="#7887C4" altura="auto" class="q-pa-sm">
         <Coluna>
-          <PVImagem @click="executeAudio()" imagem="statics/imgs/cuidados-casa/professoraExplicacao.png"/>
+          <PVImagem @click="executeAudio()" imagem="statics/imgs/cuidados-casa/003.png"/>
         </Coluna>
       </Container><br>
 
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/cuidados-casa/informacao01.png"/>
+          <PVImagem imagem="statics/imgs/cuidados-casa/006.png"/>
         </Coluna>
       </Linha><br>
 
 
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/cuidados-casa/informacao02.png"/>
+          <PVImagem imagem="statics/imgs/cuidados-casa/008.png"/>
         </Coluna>
       </Linha>
 
       <br>
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/cuidados-casa/informacao03.png"/>
+          <PVImagem imagem="statics/imgs/cuidados-casa/010.png"/>
         </Coluna>
       </Linha>
 
       <br>
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/cuidados-casa/informacao04.png"/>
+          <PVImagem imagem="statics/imgs/cuidados-casa/011.png"/>
         </Coluna>
       </Linha>
 
       <br>
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/cuidados-casa/informacao05.png"/>
+          <PVImagem imagem="statics/imgs/cuidados-casa/013.png"/>
         </Coluna>
       </Linha>
       <br>
 
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/cuidados-casa/informacao06.png"/>
+          <PVImagem imagem="statics/imgs/cuidados-casa/015.png"/>
         </Coluna>
       </Linha><br>
 
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/cuidados-casa/informacao07.png"/>
+          <PVImagem imagem="statics/imgs/cuidados-casa/016.png"/>
         </Coluna>
       </Linha>
 

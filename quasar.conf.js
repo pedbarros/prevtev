@@ -29,7 +29,7 @@ module.exports = function (ctx) {
       // gzip: true,
       // analyze: true,
       // extractCSS: false,
-      extendWebpack (cfg) {
+      extendWebpack(cfg) {
       }
     },
     devServer: {
@@ -65,7 +65,7 @@ module.exports = function (ctx) {
         'QInput',
         'QVideo',
         'QImg',
-
+        'QExpansionItem',
 
         'QBadge',
         'QAvatar',
@@ -109,8 +109,8 @@ module.exports = function (ctx) {
         'BottomSheet'
       ],
       config: {
-        notify: { /* Notify defaults */ },
-        loading: { /* Loading defaults */ }
+        notify: {/* Notify defaults */},
+        loading: {/* Loading defaults */}
       }
 
       // iconSet: 'ionicons-v4'
@@ -168,7 +168,7 @@ module.exports = function (ctx) {
     },
     electron: {
       // bundler: 'builder', // or 'packager'
-      extendWebpack (cfg) {
+      extendWebpack(cfg) {
         // do something with Electron process Webpack cfg
       },
       packager: {

@@ -1,12 +1,12 @@
 <template>
   <Pagina classePagina="full-height" :paddingPage="false">
 
-    <Titulo imagem="statics/imgs/alarme/tituloAlarme.png"/>
+    <Titulo imagem="statics/imgs/alarme/002.png"/>
 
     <div class="q-pl-sm q-pr-sm">
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/alarme/textoAlarme.png"/>
+          <PVImagem imagem="statics/imgs/alarme/003.png"/>
         </Coluna>
       </Linha>
 
@@ -32,6 +32,7 @@
           <Coluna coluna="col-4">
             <div class="q-pa-sm q-mt-md">
               <q-btn round color="primary" icon="add" @click="addMedicamento()"/>
+              <q-btn round color="primary" icon="list" @click="$router.push( { name: 'ListaMedicamentos' } )"/>
             </div>
           </Coluna>
         </Linha>

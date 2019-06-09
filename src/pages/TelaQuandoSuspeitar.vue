@@ -1,17 +1,17 @@
 <template>
   <Pagina classePagina="full-height" :paddingPage="false">
-    <Titulo imagem="statics/imgs/quando-suspeitar/tituloQuandoSuspeitar.png"/>
+    <Titulo imagem="statics/imgs/quando-suspeitar/002.png"/>
 
     <div class="q-pl-sm q-pr-sm">
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/quando-suspeitar/QuandoSuspeitarTEVP.png"/>
+          <PVImagem imagem="statics/imgs/quando-suspeitar/003.png"/>
         </Coluna>
       </Linha>
 
       <Container cor="#7887C4" altura="auto" class="q-pa-sm">
         <Coluna>
-          <PVImagem @click="executeAudio()" imagem="statics/imgs/quando-suspeitar/imgQuandoSuspeitar1.png"/>
+          <PVImagem @click="executeAudio()" imagem="statics/imgs/quando-suspeitar/005.png"/>
         </Coluna>
       </Container>
 
@@ -19,15 +19,15 @@
 
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/quando-suspeitar/QuandoSuspeitarEmboliaPulmonar.png"/>
+          <PVImagem imagem="statics/imgs/quando-suspeitar/007.png"/>
         </Coluna>
       </Linha>
 
       <Container cor="#7887C4" altura="auto" class="q-pa-sm">
         <Coluna>
-          <PVImagem @click="executeAudio()" imagem="statics/imgs/quando-suspeitar/AlertaEmbolia.png"/>
-          <PVImagem @click="executeAudio()" imagem="statics/imgs/quando-suspeitar/EmboliaBonecos.png"/> <br><br>
-          <PVImagem @click="executeAudio()" imagem="statics/imgs/quando-suspeitar/AtencaoEmbolia.png"/><br>
+          <PVImagem @click="executeAudio()" imagem="statics/imgs/quando-suspeitar/009.png"/>
+          <PVImagem @click="executeAudio()" imagem="statics/imgs/quando-suspeitar/010.png"/> <br><br>
+          <PVImagem @click="executeAudio()" imagem="statics/imgs/quando-suspeitar/012.png"/><br>
         </Coluna>
       </Container>
     </div>

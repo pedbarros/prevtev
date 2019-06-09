@@ -1,11 +1,11 @@
 <template>
   <Pagina classePagina="full-height" :paddingPage="false">
-    <Titulo imagem="statics/imgs/oque-tev/tituloOqueTev.png"/>
+    <Titulo imagem="statics/imgs/oque-tev/002.png"/>
 
     <div class="q-pl-sm q-pr-sm">
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/oque-tev/OQueETEVDescricaoGeral.png"/>
+          <PVImagem imagem="statics/imgs/oque-tev/003.png"/>
         </Coluna>
       </Linha>
 
@@ -13,34 +13,34 @@
       <Linha>
         <Coluna>
           <PVImagem @click="executeAudio('statics/audios/o-que-e-trombose-venosa-profunda.m4a')"
-                    imagem="statics/imgs/oque-tev/OQueETrombose.png"/>
+                    imagem="statics/imgs/oque-tev/005.png"/>
         </Coluna>
       </Linha>
 
 
       <Container cor="#7887C4" altura="auto" class="q-pa-sm">
         <Coluna>
-          <PVImagem @click="executeAudio()" imagem="statics/imgs/oque-tev/imgTrombose.png"/>
+          <PVImagem @click="executeAudio()" imagem="statics/imgs/oque-tev/007.png"/>
         </Coluna>
       </Container>
 
 
       <Linha>
         <Coluna>
-          <PVImagem @click="executeAudio()" imagem="statics/imgs/oque-tev/OQueEmbolia.png"/>
+          <PVImagem @click="executeAudio()" imagem="statics/imgs/oque-tev/009.png"/>
         </Coluna>
       </Linha>
 
 
       <Container cor="#7887C4" altura="auto" class="q-pa-sm">
         <Coluna>
-          <PVImagem @click="executeAudio()" imagem="statics/imgs/oque-tev/imgEmbolia.png"/>
+          <PVImagem @click="executeAudio()" imagem="statics/imgs/oque-tev/011.png"/>
         </Coluna>
       </Container>
 
       <Linha>
         <Coluna id="idContainerVideo">
-          <PVImagem @click="executeAudio()" imagem="statics/imgs/oque-tev/videoTEV.png"/>
+          <PVImagem @click="executeAudio()" imagem="statics/imgs/oque-tev/013.png"/>
           <div class="centered">
             <!--<video class="centered" controls id="myvideo">
               <source src="statics/videos/oceans.mp4"/>
@@ -48,7 +48,7 @@
             <iframe id="myvideo" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
           </div>
         </Coluna>
-      </Linha><br><br><br>
+      </Linha><br><br>
 
 
     </div>

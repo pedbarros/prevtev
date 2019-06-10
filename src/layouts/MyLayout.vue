@@ -23,5 +23,7 @@
   #layout {
     background-color: #00C1DA;
     background-image: linear-gradient(#00C1DA, #0086D4);
+    height: 100%;
+    width: 100%;
   }
 </style>

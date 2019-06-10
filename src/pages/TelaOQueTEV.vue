@@ -12,8 +12,8 @@
 
       <Linha>
         <Coluna>
-          <PVImagem @click="executeAudio('statics/audios/o-que-e-trombose-venosa-profunda.m4a')"
-                    imagem="statics/imgs/oque-tev/005.png"/>
+          <PVImagem @click="executeAudio()"
+                    imagem="statics/imgs/oque-tev/005.png" imagemBottomRight="statics/imgs/audio.png"/>
         </Coluna>
       </Linha>
 
@@ -42,9 +42,6 @@
         <Coluna id="idContainerVideo">
           <PVImagem @click="executeAudio()" imagem="statics/imgs/oque-tev/013.png"/>
           <div class="centered">
-            <!--<video class="centered" controls id="myvideo">
-              <source src="statics/videos/oceans.mp4"/>
-            </video>-->
             <iframe id="myvideo" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
           </div>
         </Coluna>
@@ -52,10 +49,6 @@
 
 
     </div>
-
-    <audio id="audioTrombose">
-      <source :src="audio" type="audio/mpeg">
-    </audio>
   </Pagina>
 </template>
 
@@ -77,7 +70,6 @@
     },
     methods: {
       executeAudio(audio = '') {
-        this.audio = audio
         let x = document.getElementById("audioTrombose");
         x.play();
       }
@@ -105,4 +97,6 @@
     width: 85% !important;
     height: 70% !important;
   }
+
+
 </style>

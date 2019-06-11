@@ -6,7 +6,9 @@
     <div class="q-pl-sm q-pr-sm">
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/alarme/003.png"/>
+          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+                     imagemBottomRight="statics/imgs/audio.png"
+                     imagem="statics/imgs/alarme/003.png"/>
         </Coluna>
       </Linha>
 
@@ -30,8 +32,8 @@
           </Coluna>
 
           <Coluna coluna="col-4">
-            <div class="q-pa-sm q-mt-md">
-              <q-btn round color="primary" icon="add" @click="addMedicamento()"/>
+            <div class="q-pa-xs q-mt-md">
+              <q-btn round color="primary" icon="add" :disable="!validarCamposAlarme" @click="addMedicamento()"/>
               <q-btn round color="primary" icon="list" @click="$router.push( { name: 'ListaMedicamentos' } )"/>
             </div>
           </Coluna>
@@ -51,11 +53,13 @@
   import PVImagem from "../components/PVImagem";
   import Titulo from "../components/Shared/Titulo";
   import Container from "../components/Shared/Container";
+  import audioMixin from "../mixins/audioMixin";
 
   export default {
     name: "Alarme",
 
     components: {Container, Titulo, PVImagem, Coluna, Linha, Pagina},
+    mixins: [audioMixin],
 
     data() {
       return {
@@ -77,25 +81,7 @@
       },
     },
 
-   /* mounted(){
-
-      this.$q.cordova.plugins.notification.local.schedule({
-        id: 1,
-        title: 'My first notification',
-        text: 'First notification test one',
-        trigger: {every: {hour: 14, minute: 6}}
-      })
-
-      alert("ok")
-    },*/
-
     methods: {
-      clearFields() {
-        /*const {item_compra, produtoSelecionado, item} = this.$options.data.call(this)
-        this.item_compra = item_compra
-        this.item = item
-        this.produtoSelecionado = produtoSelecionado*/
-      },
       addMedicamento() {
         if (this.medicamento.horarios.some(e => ( e.hora === this.hora && e.minuto === this.minuto )))
           this.$q.notify({position: 'top-right', textColor: 'warning', message: `Esse horário já foi agendado para este medicamento!`})
@@ -104,7 +90,6 @@
 
         let horario = {hora: this.hora, minuto: this.minuto}
         this.medicamento.horarios.push(horario)
-
 
       },
 
@@ -135,8 +120,8 @@
           return medicamento.horarios.map((horario, indice) => {
             let date = new Date()
             date.setDate(date.getDate()+1);
-            date.setHours(13);
-            date.setMinutes(50);
+            date.setHours(horario.hora);
+            date.setMinutes(horario.minuto);
             date.setSeconds(0);
 
             return {
@@ -152,113 +137,8 @@
         this.$q.cordova.plugins.notification.local.schedule(configuracoesDoAlarme.flat())
 
 
-        this.$q.notify({position: 'top-right', message: `Horários do medicamento serão alertados!`})
+        this.$q.notify({position: 'top-right', message: `O medicamento será alertado em seus devidos horários cadastrados!!`})
         this.$router.go(-1)
-
-        /*   let configuracoesDoAlarme = medicamentosStorage2.map( medicamento => {
-             return medicamento.horarios.map((horario, indice) => {
-               return {
-                 id: indice,
-                 title: 'TOMAR MEDICAÇÃO!',
-                 text: `O médicamento ${medicamento.nome} deve ser tomado neste exato momento!!`,
-                 trigger: {every: { hour: horario.hora, minute:  horario.minuto }}
-               };
-             })
-           }) */
-
-//console.log(JSON.parse(configuracoesDoAlarme))
-
-        //  let { nome, qtdDias } = this.medicamento
-        // this.$q.notify({position: 'top-right', message: `O medicamento ${nome} foi adicionado para ser alarmado durante  ${qtdDias} dia(s)!`})
-
-        /*this.$q.cordova.plugins.notification.local.schedule([
-          {
-            id: 1,
-            title: 'My first notification',
-            text: 'First notification test one',
-            trigger: {every: {hour: 16, minute: 20}}
-          },
-          {
-            id: 2,
-            title: 'My Second notification',
-            text: 'Second notification on 12 pm',
-            trigger: {every: {hour: 16, minute: 21}}
-          },
-          {
-            id: 3,
-            title: 'My Second notification',
-            text: 'Second notification on 16 pm',
-            trigger: {every: {hour: 16, minute: 22}}
-          }
-        ]);*/
-        /* this.$q.cordova.plugins.notification.local.schedule({
-           id: 0,
-           title: 'My first notification',
-           text: 'Thats pretty easy...',
-           trigger: {
-             every: 'second',
-             count: 1440,
-           },
-         })
-
-         this.$q.cordova.plugins.notification.local.on("trigger", function (notification) {
-           this.$q.cordova.plugins.notification.local.clear(notification.id)
-           alert("triggered: " + notification.id);
-         });*/
-
-        /* this.$q.cordova.plugins.notification.local.on('trigger').subscribe(notification => {
-           alert("Triggering notification (Page)", notification);
-           if (notification.id == 999) {
-             this.$q.cordova.plugins.notification.local.clear(notification.id).then((result) => {
-               alert('Successfully cleared', result);
-               var d1 = new Date();
-               d1.setDate(d1.getDate() + 1);
-               d1.setHours(5, 0, 0, 0);
-               this.$q.cordova.plugins.notification.local.schedule({
-                 id: 999,
-                 trigger: {at: d1}
-               });
-             }).catch((err) => {
-               alert('Failed clearing notification', err);
-             })
-           }
-         })*/
-
-        /*this.$q.cordova.plugins.notification.local.schedule({
-          title: 'My first notification',
-          text: 'Thats pretty easy...',
-          foreground: true
-        });*/
-
-        /* this.$q.cordova.plugins.notification.local.schedule({
-           title: 'My first notification',
-           text: 'Thats pretty easy...',
-           trigger: { every: 'second'  }
-         });*/
-
-        /*window.wakeuptimer.wakeup(function (result) {
-            let arr = ['08:00', '10:00', '12:00'];
-            let horaDeAlarmar = arr.includes('12:00');
-            if (horaDeAlarmar) {
-              alert("chegou a hora de alarmar!!!!!")
-            }
-          },
-          function (a) {
-            alert(JSON.stringify(a));
-          },
-          {
-            alarms: [{
-              type: 'repeating',
-              skipOnAwake: false, // set timer, but skip launch if user is using the phone (screen is on)
-              skipOnRunning: false, // set wakeup timer, but skip launch if app is already running
-              startInBackground: false,
-              time: {seconds: 1},
-              extra: {message: 'json containing app-specific information to be posted when alarm triggers'},
-              message: 'Alarm has expired!'
-            }]
-          }
-        );*/
-
       }
     }
 

@@ -5,27 +5,35 @@
     <div class="q-pl-sm q-pr-sm">
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/como-prevenir/003.png"/>
+          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+                     imagemBottomRight="statics/imgs/audio.png"
+                     imagem="statics/imgs/como-prevenir/003.png"/>
         </Coluna>
       </Linha> <br>
 
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/como-prevenir/005.png"/>
-        </Coluna>
-      </Linha> <br>
-
-
-      <Linha>
-        <Coluna>
-          <PVImagem imagem="statics/imgs/como-prevenir/008.png"/>
+          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+                     imagemBottomRight="statics/imgs/audio.png"
+                     imagem="statics/imgs/como-prevenir/005.png"/>
         </Coluna>
       </Linha> <br>
 
 
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/como-prevenir/010.png"/>
+          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+                     imagemBottomRight="statics/imgs/audio.png"
+                     imagem="statics/imgs/como-prevenir/008.png"/>
+        </Coluna>
+      </Linha> <br>
+
+
+      <Linha>
+        <Coluna>
+          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+                     imagemBottomRight="statics/imgs/audio.png"
+                     imagem="statics/imgs/como-prevenir/010.png"/>
         </Coluna>
       </Linha> <br>
 
@@ -39,20 +47,26 @@
 
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/como-prevenir/013.png"/>
+          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+                     imagemBottomRight="statics/imgs/audio.png"
+                     imagem="statics/imgs/como-prevenir/013.png"/>
         </Coluna>
       </Linha> <br>
 
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/como-prevenir/015.png"/>
+          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+                     imagemBottomRight="statics/imgs/audio.png"
+                     imagem="statics/imgs/como-prevenir/015.png"/>
         </Coluna>
       </Linha> <br>
 
 
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/como-prevenir/017.png"/>
+          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+                     imagemBottomRight="statics/imgs/audio.png"
+                     imagem="statics/imgs/como-prevenir/017.png"/>
         </Coluna>
       </Linha> <br>
 
@@ -71,10 +85,6 @@
       </Linha> <br>
 
     </div>
-
-    <audio id="audioTrombose">
-      <source :src="audio" type="audio/mpeg">
-    </audio>
   </Pagina>
 </template>
 
@@ -85,43 +95,11 @@
   import PVImagem from "../components/PVImagem";
   import Titulo from "../components/Shared/Titulo";
   import Container from "../components/Shared/Container";
+  import audioMixin from "../mixins/audioMixin";
 
   export default {
     name: "TelaComoPrevenir",
     components: {Container, Titulo, PVImagem, Coluna, Linha, Pagina},
-    data() {
-      return {
-        audio: ''
-      }
-    },
-    methods: {
-      executeAudio(audio = '') {
-        this.audio = audio
-        let x = document.getElementById("audioTrombose");
-        x.play();
-      }
-    }
-
+    mixins: [audioMixin]
   }
 </script>
-
-<style scoped>
-  #idContainerVideo {
-    position: relative;
-    text-align: center;
-  }
-
-  .centered {
-    width: 100%;
-    height: 80%;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  video {
-    width: 80% !important;
-    height: 50% !important;
-  }
-</style>

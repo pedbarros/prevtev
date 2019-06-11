@@ -6,11 +6,8 @@
       @click="$emit('click', $event)"/>
 
     <div class="bottomright" v-if="imagemBottomRight">
-      <img :src="imagemBottomRight" width="32" height="33"  @click="$emit('clickAudio', $event)">
+      <img :src="imagemBottomRight" width="32" height="33" @click="$emit('clickBottomRight', $event)">
 
-      <audio id="audioTrombose">
-        <source src="statics/audios/o-que-e-trombose-venosa-profunda.m4a" type="audio/mpeg">
-      </audio>
     </div>
   </div>
 
@@ -19,6 +16,11 @@
 <script>
   export default {
     name: "PVImagem",
+    data () {
+      return {
+        audio: ''
+      };
+    },
     props: {
       imagem: {
         type: String,
@@ -26,7 +28,24 @@
       },
       imagemBottomRight: {
         type: String
-      }
+      }/*,
+      audioBottomRight: {
+        type: String
+      }*/
+    },
+
+    methods: {
+      executeAudio(event) {
+       /* let audio1 = this.$refs.audioImagem
+        audio1.play();*/
+       /* if (audio.paused) {
+          audio.play();
+        } else {
+          audio.currentTime = 0
+        }*/
+
+
+      },
     }
   }
 </script>

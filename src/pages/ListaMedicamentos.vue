@@ -49,8 +49,15 @@
 
     data() {
       return {
-        medicamentos: JSON.parse(this.$q.localStorage.getItem('medicamentos')) || []
+        medicamentos: []
       }
+    },
+
+
+    mounted(){
+        this.medicamentos = JSON.parse(this.$q.localStorage.getItem('medicamentos')) || []
+
+        if (this.medicamentos.length === 0) this.$q.notify('O paciente não contém medicamento(s) para serem alarmado(s)!!')
     },
 
     methods: {
@@ -66,7 +73,6 @@
           this.$q.localStorage.set('medicamentos', JSON.stringify(this.medicamentos))
           this.$q.notify('Horário removido com sucesso!')
         } catch(e) {
-          console.log(e)
           this.$q.notify('Ocorreu um erro na remoção do horário!')
         }
       }

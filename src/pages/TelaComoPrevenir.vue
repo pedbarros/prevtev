@@ -33,7 +33,7 @@
         <Coluna>
           <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
                      imagemBottomRight="statics/imgs/audio.png"
-                     imagem="statics/imgs/como-prevenir/010.png"/>
+                     imagem="statics/imgs/como-prevenir/010.gif"/>
         </Coluna>
       </Linha> <br>
 

@@ -127,9 +127,9 @@ module.exports = function (ctx) {
       // workboxPluginMode: 'InjectManifest',
       // workboxOptions: {},
       manifest: {
-        // name: 'Quasar App',
-        // short_name: 'Quasar-PWA',
-        // description: 'Best PWA App in town!',
+        name: 'PrevTev',
+        short_name: 'Prev-Tev',
+        description: 'PrevTev',
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',

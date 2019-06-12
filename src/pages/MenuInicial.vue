@@ -55,14 +55,6 @@
       }
     },
 
-    created(){
-      console.log("created")
-    },
-
-    mounted() {
-      console.log("mounted")
-    },
-
     methods: {
       openVideo() {
         let elem = document.getElementById("myvideo");

@@ -58,20 +58,6 @@
 </script>
 
 <style scoped>
-  #idContainerVideo {
-    position: relative;
-    text-align: center;
-  }
-
-  .centered {
-    width: 100%;
-    height: 80%;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
   video {
     width: 80% !important;
     height: 50% !important;

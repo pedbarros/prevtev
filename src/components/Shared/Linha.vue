@@ -15,7 +15,10 @@
           },
 
           addClass: {
-            type: String
+            type: String,
+            default(){
+              return ""
+            }
           }
         },
 

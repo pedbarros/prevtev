@@ -1,9 +1,5 @@
 <template>
-  <Linha>
-    <Coluna>
-      <PVImagem :imagem="imagem"/>
-    </Coluna>
-  </Linha>
+  <PVImagem :imagem="imagem"/>
 </template>
 
 <script>
@@ -17,3 +13,10 @@
     props: ['imagem']
   }
 </script>
+
+<style scoped>
+  PVImagem {
+    padding: 0 !important;
+    border: 1px solid #4CAF50;
+  }
+</style>

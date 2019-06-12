@@ -6,7 +6,7 @@
       @click="$emit('click', $event)"/>
 
     <div class="bottomright" v-if="imagemBottomRight">
-      <img :src="imagemBottomRight" width="40" height="41" @click="$emit('clickBottomRight', $event)">
+      <img :src="imagemBottomRight" width="38" height="39" @click="$emit('clickBottomRight', $event)">
 
     </div>
   </div>

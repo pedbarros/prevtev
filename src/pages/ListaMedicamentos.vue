@@ -1,5 +1,5 @@
 <template>
-  <Pagina classePagina="full-height" :paddingPage="false">
+  <Conteudo classeConteudo="full-height" :paddingPage="false">
     <Titulo imagem="statics/imgs/alarme/002.png"/>
 
     <div class="q-pl-sm q-pr-sm">
@@ -32,11 +32,11 @@
       </Linha>
       <br>
     </div>
-  </Pagina>
+  </Conteudo>
 </template>
 
 <script>
-  import Pagina from "../components/Shared/Pagina";
+  import Conteudo from "../components/Shared/Conteudo";
   import Titulo from "../components/Shared/Titulo";
   import Coluna from "../components/Shared/Coluna";
   import Linha from "../components/Shared/Linha";
@@ -45,7 +45,7 @@
 
     name: "ListaMedicamentos",
 
-    components: {Linha, Coluna, Titulo, Pagina},
+    components: {Linha, Coluna, Titulo, Conteudo},
 
     data() {
       return {

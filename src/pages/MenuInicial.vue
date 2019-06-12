@@ -1,5 +1,5 @@
 <template>
-  <Pagina>
+  <Conteudo>
     <br><br>
     <Linha linha="row justify-around">
       <Coluna coluna="col-5 col-sm-3 justify-around">
@@ -34,12 +34,12 @@
                   imagem="statics/imgs/menuinicial/008.png"/>
       </Coluna>
     </Linha>
-  </Pagina>
+  </Conteudo>
 </template>
 
 <script>
   import PVImagem from "../components/PVImagem";
-  import Pagina from "../components/Shared/Pagina";
+  import Conteudo from "../components/Shared/Conteudo";
   import Linha from "../components/Shared/Linha";
   import Coluna from "../components/Shared/Coluna";
   import {Notify} from 'quasar'
@@ -47,7 +47,7 @@
   export default {
     name: 'MenuInicial',
 
-    components: {Coluna, Linha, Pagina, PVImagem},
+    components: {Coluna, Linha, Conteudo, PVImagem},
 
     data(){
       return {

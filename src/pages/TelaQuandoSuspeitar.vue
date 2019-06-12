@@ -1,5 +1,5 @@
 <template>
-  <Pagina classePagina="full-height" :paddingPage="false">
+  <Conteudo classeConteudo="full-height" :paddingPage="false">
     <Titulo imagem="statics/imgs/quando-suspeitar/002.png"/>
 
     <div class="q-pl-sm q-pr-sm">
@@ -37,11 +37,11 @@
         </Coluna>
       </Container>
     </div>
-  </Pagina>
+  </Conteudo>
 </template>
 
 <script>
-  import Pagina from "../components/Shared/Pagina";
+  import Conteudo from "../components/Shared/Conteudo";
   import Linha from "../components/Shared/Linha";
   import Coluna from "../components/Shared/Coluna";
   import PVImagem from "../components/PVImagem";
@@ -51,7 +51,7 @@
 
   export default {
     name: "TelaQuandoSuspeitar",
-    components: {Container, Titulo, PVImagem, Coluna, Linha, Pagina},
+    components: {Container, Titulo, PVImagem, Coluna, Linha, Conteudo},
     mixins: [audioMixin]
 
   }

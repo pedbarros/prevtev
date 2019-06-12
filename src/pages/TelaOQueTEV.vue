@@ -1,5 +1,5 @@
 <template>
-  <Pagina classePagina="full-height" :paddingPage="false">
+  <Conteudo classeConteudo="full-height" :paddingPage="false">
     <Titulo imagem="statics/imgs/oque-tev/002.png"/>
 
     <div class="q-pl-sm q-pr-sm">
@@ -15,7 +15,7 @@
       <Linha>
         <Coluna>
           <PVImagem
-            @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+            @clickBottomRight="executarSom('https://instaud.io/3NSH')"
             imagemBottomRight="statics/imgs/audio.png"
             imagem="statics/imgs/oque-tev/005.png"/>
         </Coluna>
@@ -57,11 +57,11 @@
 
 
     </div>
-  </Pagina>
+  </Conteudo>
 </template>
 
 <script>
-  import Pagina from "../components/Shared/Pagina";
+  import Conteudo from "../components/Shared/Conteudo";
   import Linha from "../components/Shared/Linha";
   import Coluna from "../components/Shared/Coluna";
   import PVImagem from "../components/PVImagem";
@@ -71,7 +71,7 @@
 
   export default {
     name: "TelaOQueTEV",
-    components: {Container, Titulo, PVImagem, Coluna, Linha, Pagina},
+    components: {Container, Titulo, PVImagem, Coluna, Linha, Conteudo},
     mixins: [audioMixin]
   }
 </script>

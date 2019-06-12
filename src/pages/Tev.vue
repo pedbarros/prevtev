@@ -2,15 +2,16 @@
   <Pagina classePagina="full-height" :paddingPage="false">
 
     <Titulo imagem="statics/imgs/tev/tituloTev.png"/>
+    <br><br>
 
-    <Linha>
-      <Coluna>
+    <Linha add-class="justify-around">
+      <Coluna coluna="col-xs-12 col-sm-6 col-md-6">
         <PVImagem widht="5px" @click="clik" imagem="statics/imgs/tev/corpoHumanoTev.png"></PVImagem>
       </Coluna>
     </Linha>
 
-    <Linha>
-      <Coluna>
+    <Linha add-class="justify-around">
+      <Coluna coluna="col-6 col-lg-10">
         <PVImagem @click="$router.push( { name: 'MenuInicial'  } )"
                   imagem="statics/imgs/tev/btnTev.png"/>
       </Coluna>
@@ -41,10 +42,3 @@
     }
   }
 </script>
-<style scoped>
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
-
-</style>

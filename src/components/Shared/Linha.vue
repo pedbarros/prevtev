@@ -1,5 +1,5 @@
 <template>
-  <div :class="linha">
+  <div :class="linhaComNovaClasse">
     <slot></slot>
   </div>
 </template>
@@ -12,7 +12,17 @@
             default(){
               return "row q-col-gutter-x-xs q-col-gutter-y-lg"
             }
+          },
+
+          addClass: {
+            type: String
           }
+        },
+
+        computed:{
+            linhaComNovaClasse(){
+              return `${this.linha}  ${this.addClass}`
+            }
         }
     }
 </script>

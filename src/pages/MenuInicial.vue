@@ -2,22 +2,22 @@
   <Pagina>
     <br><br>
     <Linha linha="row justify-around">
-      <Coluna coluna="col-5 justify-around">
+      <Coluna coluna="col-5 col-sm-3 justify-around">
         <PVImagem @click="$router.push( { name: 'TelaOQueTEV' } )" imagem="statics/imgs/menuinicial/003.png"/>
       </Coluna>
 
-      <Coluna coluna="col-5 justify-around">
+      <Coluna coluna="col-5 col-sm-3 justify-around">
         <PVImagem @click="$router.push( { name: 'TelaQuandoSuspeitar' } )" imagem="statics/imgs/menuinicial/004.png"/>
       </Coluna>
     </Linha>
 
     <br><br>
     <Linha linha="row justify-around">
-      <Coluna coluna="col-5 justify-around">
+      <Coluna coluna="col-5 col-sm-3 justify-around">
         <PVImagem @click="$router.push( { name: 'TelaComoPrevenir' } )" imagem="statics/imgs/menuinicial/005.png"/>
       </Coluna>
 
-      <Coluna coluna="col-5 justify-around">
+      <Coluna coluna="col-5 col-sm-3 justify-around">
         <PVImagem  @click="$router.push( { name: 'TelaConsequencias' } )" imagem="statics/imgs/menuinicial/006.png"/>
       </Coluna>
     </Linha>
@@ -25,11 +25,11 @@
 
     <br><br>
     <Linha linha="row justify-around">
-      <Coluna coluna="col-5 justify-around">
+      <Coluna coluna="col-5 col-sm-3 justify-around">
         <PVImagem @click="$router.push( { name: 'TelaCuidadosCasa' } )" imagem="statics/imgs/menuinicial/007.png"/>
       </Coluna>
 
-      <Coluna coluna="col-5 justify-around">
+      <Coluna coluna="col-5 col-sm-3 justify-around">
         <PVImagem @click="$router.push( { name: 'AlarmeMedicacao' } )"
                   imagem="statics/imgs/menuinicial/008.png"/>
       </Coluna>

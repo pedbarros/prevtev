@@ -6,7 +6,7 @@
       @click="$emit('click', $event)"/>
 
     <div class="bottomright" v-if="imagemBottomRight">
-      <img :src="imagemBottomRight" width="32" height="33" @click="$emit('clickBottomRight', $event)">
+      <img :src="imagemBottomRight" width="40" height="41" @click="$emit('clickBottomRight', $event)">
 
     </div>
   </div>
@@ -28,25 +28,8 @@
       },
       imagemBottomRight: {
         type: String
-      }/*,
-      audioBottomRight: {
-        type: String
-      }*/
+      }
     },
-
-    methods: {
-      executeAudio(event) {
-       /* let audio1 = this.$refs.audioImagem
-        audio1.play();*/
-       /* if (audio.paused) {
-          audio.play();
-        } else {
-          audio.currentTime = 0
-        }*/
-
-
-      },
-    }
   }
 </script>
 
@@ -63,7 +46,7 @@
   .bottomright {
     position: absolute;
     bottom: 1%;
-    right: 2%;
+    right: 3%;
     font-size: 18px;
   }
 

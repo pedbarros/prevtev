@@ -30,7 +30,7 @@
       </Coluna>
 
       <Coluna coluna="col-5 col-sm-3 justify-around">
-        <PVImagem @click="$router.push( { name: 'AlarmeMedicacao' } )"
+        <PVImagem @click="$router.push( { name: 'TelaAlarmeMedicacao' } )"
                   imagem="statics/imgs/menuinicial/008.png"/>
       </Coluna>
     </Linha>

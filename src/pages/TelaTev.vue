@@ -12,7 +12,7 @@
 
     <Linha add-class="justify-around">
       <Coluna coluna="col-xs-12 col-sm-6 col-md-6">
-        <PVImagem @click="$router.push( { name: 'MenuInicial'  } )"
+        <PVImagem @click="$router.push( { name: 'TelaMenuInicial'  } )"
                   imagem="statics/imgs/tev/btnTev.png"/>
       </Coluna>
     </Linha>

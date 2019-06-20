@@ -5,7 +5,7 @@
     <div class="q-pl-sm q-pr-sm">
       <Linha>
         <Coluna>
-          <PVImagem @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+          <PVImagem @clickBottomRight="executarSom('Consequencias_01.wav')"
                     imagemBottomRight="statics/imgs/audio.png"
                     imagem="statics/imgs/consequencias/003.png"/>
         </Coluna>
@@ -19,7 +19,7 @@
 
       <Linha>
         <Coluna>
-          <PVImagem @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+          <PVImagem @clickBottomRight="executarSom('Consequencias_02.wav')"
                     imagemBottomRight="statics/imgs/audio.png"
                     imagem="statics/imgs/consequencias/007.png"/>
         </Coluna>

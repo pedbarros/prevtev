@@ -5,7 +5,7 @@
     <div class="q-pl-sm q-pr-sm">
       <Linha>
         <Coluna>
-          <PVImagem @clickBottomRight="executarSom('statics/audios/o-que-e-trombose-venosa-profunda.m4a')"
+          <PVImagem @clickBottomRight="executarSom('TEV%20-%2001.wav')"
                     imagemBottomRight="statics/imgs/audio.png"
                     imagem="statics/imgs/oque-tev/003.png"/>
         </Coluna>
@@ -15,7 +15,7 @@
       <Linha>
         <Coluna>
           <PVImagem
-            @clickBottomRight="executarSom('https://instaud.io/3NSH')"
+            @clickBottomRight="executarSom('TEV%20-%2002.wav')"
             imagemBottomRight="statics/imgs/audio.png"
             imagem="statics/imgs/oque-tev/005.png"/>
         </Coluna>
@@ -32,7 +32,7 @@
       <Linha>
         <Coluna>
           <PVImagem
-            @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+            @clickBottomRight="executarSom('TEV%20-%2003.wav')"
             imagemBottomRight="statics/imgs/audio.png"
             imagem="statics/imgs/oque-tev/009.png"/>
         </Coluna>

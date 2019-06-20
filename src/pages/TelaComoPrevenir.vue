@@ -5,7 +5,7 @@
     <div class="q-pl-sm q-pr-sm">
       <Linha>
         <Coluna>
-          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+          <PVImagem  @clickBottomRight="executarSom('Como%20prevenir%20-%2001.wav')"
                      imagemBottomRight="statics/imgs/audio.png"
                      imagem="statics/imgs/como-prevenir/003.png"/>
         </Coluna>
@@ -20,7 +20,7 @@
 
       <Linha>
         <Coluna>
-          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+          <PVImagem  @clickBottomRight="executarSom('Como%20prevenir%20-%2003.wav')"
                      imagemBottomRight="statics/imgs/audio.png"
                      imagem="statics/imgs/como-prevenir/008.png"/>
         </Coluna>
@@ -29,7 +29,7 @@
 
       <Linha>
         <Coluna>
-          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+          <PVImagem  @clickBottomRight="executarSom('Como%20prevenir%20-%2004.wav')"
                      imagemBottomRight="statics/imgs/audio.png"
                      imagem="statics/imgs/como-prevenir/010.gif"/>
         </Coluna>
@@ -45,7 +45,7 @@
 
       <Linha>
         <Coluna>
-          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+          <PVImagem  @clickBottomRight="executarSom('Como%20prevenir%20-%2005.wav')"
                      imagemBottomRight="statics/imgs/audio.png"
                      imagem="statics/imgs/como-prevenir/013.png"/>
         </Coluna>
@@ -53,7 +53,7 @@
 
       <Linha>
         <Coluna>
-          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+          <PVImagem  @clickBottomRight="executarSom('Como%20prevenir%20-%2006.wav')"
                      imagemBottomRight="statics/imgs/audio.png"
                      imagem="statics/imgs/como-prevenir/015.png"/>
         </Coluna>
@@ -62,7 +62,7 @@
 
       <Linha>
         <Coluna>
-          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+          <PVImagem  @clickBottomRight="executarSom('Como%20prevenir%20-%2002.wav')"
                      imagemBottomRight="statics/imgs/audio.png"
                      imagem="statics/imgs/como-prevenir/017.png"/>
         </Coluna>

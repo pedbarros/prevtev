@@ -1,4 +1,4 @@
-
+import { urlFirebase } from '../helpers/storage-api'
 export default {
   data(){
     return {
@@ -7,9 +7,16 @@ export default {
   },
   methods: {
     executarSom (sound) {
+      this.$q.loading.show({
+        message: '<p><b>Por favor, espere um pouco. O áudio está sendo carregado.<b></p>'
+      })
+
       if(sound) {
-        this.audioObj.src = sound
-        this.audioObj.play();
+        let soundFirebase = urlFirebase(sound)
+        this.audioObj.src = soundFirebase
+
+        this.audioObj.play()
+          .then(res =>{}).finally( () => this.$q.loading.hide())
       }
     }
   }

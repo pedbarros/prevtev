@@ -6,7 +6,7 @@
     <div class="q-pl-sm q-pr-sm">
       <Linha>
         <Coluna>
-          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+          <PVImagem  @clickBottomRight="executarSom('Alarme%20de%20MedicaÆo.wav')"
                      imagemBottomRight="statics/imgs/audio.png"
                      imagem="statics/imgs/alarme/003.png"/>
         </Coluna>
@@ -33,8 +33,8 @@
 
           <Coluna coluna="col-4">
             <div class="q-pa-xs q-mt-md">
-              <q-btn round color="primary" icon="add" :disable="!validarCamposAlarme" @click="addMedicamento()"/>
-              <q-btn round color="primary" icon="list" @click="$router.push( { name: 'ListaMedicamentos' } )"/>
+              <q-btn round color="primary" icon="add" :disable="!validarCamposAddMedicamento" @click="addMedicamento()"/>
+              <q-btn round color="primary" icon="list" @click="$router.push( { name: 'TelaListaMedicamentos' } )"/>
             </div>
           </Coluna>
         </Linha>
@@ -76,6 +76,10 @@
     },
 
     computed: {
+      validarCamposAddMedicamento() {
+        return (this.medicamento.nome !== '' && this.medicamento.qtdDias !== '' && this.hora !== '' && this.minuto !== '')
+      },
+
       validarCamposAlarme() {
         return (this.medicamento.nome !== '' && this.medicamento.qtdDias !== '' && this.medicamento.horarios.length > 0)
       },

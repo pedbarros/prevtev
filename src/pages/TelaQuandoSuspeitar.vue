@@ -5,7 +5,7 @@
     <div class="q-pl-sm q-pr-sm">
       <Linha>
         <Coluna>
-          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+          <PVImagem  @clickBottomRight="executarSom('Quando%20suspeitar%20-%2001.wav')"
                      imagemBottomRight="statics/imgs/audio.png"
                      imagem="statics/imgs/quando-suspeitar/003.png"/>
         </Coluna>
@@ -21,7 +21,7 @@
 
       <Linha>
         <Coluna>
-          <PVImagem @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+          <PVImagem @clickBottomRight="executarSom('Quando%20suspeitar%20-%2002.wav')"
                     imagemBottomRight="statics/imgs/audio.png"
                     imagem="statics/imgs/quando-suspeitar/007.png"/>
         </Coluna>
@@ -31,7 +31,7 @@
         <Coluna>
           <PVImagem imagem="statics/imgs/quando-suspeitar/009.png"/>
           <PVImagem imagem="statics/imgs/quando-suspeitar/010.png"/> <br><br>
-          <PVImagem @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+          <PVImagem @clickBottomRight="executarSom('Quando%20suspeitar%20-%2003.wav')"
                     imagemBottomRight="statics/imgs/audio.png"
                     imagem="statics/imgs/quando-suspeitar/012.png"/><br>
         </Coluna>

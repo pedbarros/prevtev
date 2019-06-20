@@ -6,7 +6,7 @@
     <div class="q-pl-sm q-pr-sm">
       <Container cor="#7887C4" altura="auto" class="q-pa-sm">
         <Coluna>
-          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+          <PVImagem  @clickBottomRight="executarSom('Cuidados%20em%20casa%20-%2001.wav')"
                     imagemBottomRight="statics/imgs/audio.png"
                     imagem="statics/imgs/cuidados-casa/003.png"/>
         </Coluna>
@@ -14,7 +14,7 @@
 
       <Linha>
         <Coluna>
-          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+          <PVImagem  @clickBottomRight="executarSom('Cuidados%20em%20casa%20-%2002.wav')"
                      imagemBottomRight="statics/imgs/audio.png"
                      imagem="statics/imgs/cuidados-casa/006.png"/>
         </Coluna>
@@ -23,7 +23,7 @@
 
       <Linha>
         <Coluna>
-          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+          <PVImagem  @clickBottomRight="executarSom('Cuidados%20em%20casa%20-%2003.wav')"
                      imagemBottomRight="statics/imgs/audio.png"
                      imagem="statics/imgs/cuidados-casa/008.gif"/>
         </Coluna>
@@ -46,7 +46,7 @@
       <br>
       <Linha>
         <Coluna>
-          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+          <PVImagem  @clickBottomRight="executarSom('Cuidados%20em%20casa%20-%2004.wav')"
                      imagemBottomRight="statics/imgs/audio.png"
                      imagem="statics/imgs/cuidados-casa/013.png"/>
         </Coluna>
@@ -55,7 +55,7 @@
 
       <Linha>
         <Coluna>
-          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+          <PVImagem  @clickBottomRight="executarSom('Cuidados%20em%20casa%20-%2005.wav')"
                      imagemBottomRight="statics/imgs/audio.png"
                      imagem="statics/imgs/cuidados-casa/015.png"/>
         </Coluna>
@@ -63,7 +63,7 @@
 
       <Linha>
         <Coluna>
-          <PVImagem  @clickBottomRight="executarSom('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"
+          <PVImagem  @clickBottomRight="executarSom('Cuidados%20em%20casa%20-%2006.wav')"
                      imagemBottomRight="statics/imgs/audio.png"
                      imagem="statics/imgs/cuidados-casa/016.png"/>
         </Coluna>

@@ -49,7 +49,8 @@
         <Coluna id="idContainerVideo">
           <PVImagem imagem="statics/imgs/oque-tev/013.png"/>
           <div class="centered">
-            <iframe id="myvideo" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            <video id="myvideo"  controls><source src="https://firebasestorage.googleapis.com/v0/b/pedroapp-c2d3d.appspot.com/o/TEV.mp4?alt=media&token=2ea489f4-22da-4159-a5f6-3b262ddb3ca0" type="video/mp4"></video>
+            <!-- <iframe id="myvideo" allow="" src="https://firebasestorage.googleapis.com/v0/b/pedroapp-c2d3d.appspot.com/o/TEV.mp4?alt=media&token=2ea489f4-22da-4159-a5f6-3b262ddb3ca0"></iframe> -->
           </div>
         </Coluna>
       </Linha>

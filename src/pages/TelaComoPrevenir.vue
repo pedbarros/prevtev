@@ -17,6 +17,14 @@
         </Coluna>
       </Linha> <br>
 
+      <Linha>
+        <Coluna>
+          <PVImagem  @clickBottomRight="executarSom('Como%20prevenir%20-%2002.wav')"
+                     imagemBottomRight="statics/imgs/audio.png"
+                     imagem="statics/imgs/como-prevenir/006.png"/>
+        </Coluna>
+      </Linha>
+
 
       <Linha>
         <Coluna>

@@ -48,10 +48,7 @@
       <Linha>
         <Coluna id="idContainerVideo">
           <PVImagem imagem="statics/imgs/oque-tev/013.png"/>
-          <div class="centered">
-            <video id="myvideo"  controls><source src="https://firebasestorage.googleapis.com/v0/b/pedroapp-c2d3d.appspot.com/o/TEV.mp4?alt=media&token=2ea489f4-22da-4159-a5f6-3b262ddb3ca0" type="video/mp4"></video>
-            <!-- <iframe id="myvideo" allow="" src="https://firebasestorage.googleapis.com/v0/b/pedroapp-c2d3d.appspot.com/o/TEV.mp4?alt=media&token=2ea489f4-22da-4159-a5f6-3b262ddb3ca0"></iframe> -->
-          </div>
+          <PVVideo video="https://firebasestorage.googleapis.com/v0/b/pedroapp-c2d3d.appspot.com/o/TEV.mp4?alt=media&token=2ea489f4-22da-4159-a5f6-3b262ddb3ca0"/>
         </Coluna>
       </Linha>
       <br><br>
@@ -69,10 +66,11 @@
   import Titulo from "../components/Shared/Titulo";
   import Container from "../components/Shared/Container";
   import audioMixin from "../mixins/audioMixin";
+  import PVVideo from "../components/PVVideo";
 
   export default {
     name: "TelaOQueTEV",
-    components: {Container, Titulo, PVImagem, Coluna, Linha, Conteudo},
+    components: {PVVideo, Container, Titulo, PVImagem, Coluna, Linha, Conteudo},
     mixins: [audioMixin]
   }
 </script>
@@ -81,20 +79,6 @@
   #idContainerVideo {
     position: relative;
     text-align: center;
-  }
-
-  .centered {
-    width: 100%;
-    height: 80%;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  #myvideo {
-    width: 85% !important;
-    height: 70% !important;
   }
 
 

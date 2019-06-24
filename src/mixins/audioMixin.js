@@ -5,10 +5,11 @@ export default {
       audioObj: new Audio()
     }
   },
+
   methods: {
     executarSom (sound) {
       this.$q.loading.show({
-        message: '<p><b>Por favor, espere um pouco. O áudio está sendo carregado.<b></p>'
+        message: '<p><b>Por favor, espere um pouco. O áudio está sendo carregado...<b></p>'
       })
 
       if(sound) {
@@ -19,5 +20,11 @@ export default {
           .then(res =>{}).finally( () => this.$q.loading.hide())
       }
     }
+  },
+
+  destroyed(){
+    this.audioObj.pause();
+    this.audioObj.currentTime = 0;
   }
+
 }

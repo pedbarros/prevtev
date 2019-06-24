@@ -33,8 +33,8 @@
 
           <Coluna coluna="col-4">
             <div class="q-pa-xs q-mt-md">
-              <q-btn round color="primary" icon="add" :disable="!validarCamposAddMedicamento" @click="addMedicamento()"/>
-              <q-btn round color="primary" icon="list" @click="$router.push( { name: 'TelaListaMedicamentos' } )"/>
+              <q-btn round color="primary" icon="add" :disable="!validarCamposAddMedicamento" @click="acessoRestrito(1)"/>
+              <q-btn round color="primary" icon="list" @click="acessoRestrito(2)"/>
             </div>
           </Coluna>
         </Linha>
@@ -43,6 +43,8 @@
                :disable="!validarCamposAlarme"/>
       </Container>
     </div>
+
+
   </Conteudo>
 </template>
 
@@ -59,6 +61,8 @@
     name: "Alarme",
 
     components: {Container, Titulo, PVImagem, Coluna, Linha, Conteudo},
+
+
     mixins: [audioMixin],
 
     data() {
@@ -86,6 +90,32 @@
     },
 
     methods: {
+
+      acessoRestrito (parametroEntrada) {
+        this.$q.dialog({
+          title: 'Acesso Restrito',
+          message: 'Digite a senha de acesso: ',
+          prompt: {
+            model: '',
+            type: 'password'
+          },
+          cancel: true,
+          persistent: true
+        }).onOk(data => {
+          console.log(parametroEntrada)
+          if (data === "prevtev987"){
+            if(parametroEntrada === 1)
+              this.addMedicamento()
+            if(parametroEntrada === 2)
+              this.$router.push( { name: 'TelaListaMedicamentos' } )
+
+          }else
+            this.$q.notify({position: 'top-right', textColor: 'error', message: `Credenciais de acesso incorreta!`})
+        }).onDismiss(() => {
+          console.log('I am triggered on both OK and Cancel')
+        })
+      },
+
       addMedicamento() {
         if (this.medicamento.horarios.some(e => ( e.hora === this.hora && e.minuto === this.minuto )))
           this.$q.notify({position: 'top-right', textColor: 'warning', message: `Esse horário já foi agendado para este medicamento!`})
@@ -131,6 +161,7 @@
             return {
               id: indice,
               title: 'TOMAR MEDICAÇÃO!',
+              vibrate: true,
               text: `O médicamento ${medicamento.nome} deve ser tomado neste exato momento!!`,
               at: date,
               every: 'day'

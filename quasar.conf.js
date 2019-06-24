@@ -106,7 +106,8 @@ module.exports = function (ctx) {
         'LocalStorage',
         'Notify',
         'Loading',
-        'BottomSheet'
+        'BottomSheet',
+        'Dialog'
       ],
       config: {
         notify: {/* Notify defaults */},

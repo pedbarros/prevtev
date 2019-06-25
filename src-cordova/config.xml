@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="br.com.pedbarros.prevtev" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="br.com.pedbarros.prevtev" version="0.0.2">
     <name>PrevTev</name>
     <description>App para tratamento educacional do TEV</description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
-    Apache Cordova Team
-  </author>
+        Apache Cordova Team
+    </author>
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
@@ -15,16 +15,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <platform name="android">
-        <splash density="port-hdpi" src="../src/statics/splash/splash-hdpi.png" />
-        <splash density="port-ldpi" src="../src/statics/splash/splash-ldpi.png" />
-        <splash density="port-mdpi" src="../src/statics/splash/splash-mdpi.png" />
-        <splash density="port-xhdpi" src="../src/statics/splash/splash-xhdpi.png" />
-        <splash density="port-xxhdpi" src="../src/statics/splash/splash-xxhdpi.png" />
-        <splash density="port-xxxhdpi" src="../src/statics/splash/splash-xxxhdpi.png" />
-        <preference name="SplashMaintainAspectRatio" value="true" />
-        <preference name="SplashShowOnlyFirstTime" value="true" />
-        <preference name="SplashScreenSpinnerColor" value="white" />
-        <preference name="SplashScreenDelay" value="1200" />
+        <allow-intent href="market:*" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />

@@ -102,7 +102,7 @@
           cancel: true,
           persistent: true
         }).onOk(data => {
-          console.log(parametroEntrada)
+
           if (data === "prevtev987"){
             if(parametroEntrada === 1)
               this.addMedicamento()
@@ -114,6 +114,8 @@
         }).onDismiss(() => {
           console.log('I am triggered on both OK and Cancel')
         })
+
+
       },
 
       addMedicamento() {

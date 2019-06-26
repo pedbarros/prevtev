@@ -155,7 +155,7 @@
         let configuracoesDoAlarme = medicamentosStorage2.map(medicamento => {
           return medicamento.horarios.map((horario, indice) => {
             let date = new Date()
-            date.setDate(date.getDate()+1);
+            date.setDate(date.getDate());
             date.setHours(horario.hora);
             date.setMinutes(horario.minuto);
             date.setSeconds(0);
@@ -164,6 +164,8 @@
               id: indice,
               title: 'TOMAR MEDICAÇÃO!',
               vibrate: true,
+              priority: 1, // High priority
+              sound: true,
               text: `O médicamento ${medicamento.nome} deve ser tomado neste exato momento!!`,
               at: date,
               every: 'day'

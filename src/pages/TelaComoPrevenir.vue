@@ -70,7 +70,7 @@
 
       <Linha>
         <Coluna>
-          <PVImagem  @clickBottomRight="executarSom('Como%20prevenir%20-%2002.wav')"
+          <PVImagem  @clickBottomRight="executarSom('Como%20prevenir%20-%2007.wav')"
                      imagemBottomRight="statics/imgs/audio.png"
                      imagem="statics/imgs/como-prevenir/017.png"/>
         </Coluna>

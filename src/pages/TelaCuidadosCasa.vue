@@ -39,14 +39,16 @@
       <br>
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/cuidados-casa/011.png"/>
+          <PVImagem @clickBottomRight="executarSom('Cuidados%20em%20casa%20-%2004.wav')"
+                    imagemBottomRight="statics/imgs/audio.png"
+                    imagem="statics/imgs/cuidados-casa/011.png"/>
         </Coluna>
       </Linha>
 
       <br>
       <Linha>
         <Coluna>
-          <PVImagem  @clickBottomRight="executarSom('Cuidados%20em%20casa%20-%2004.wav')"
+          <PVImagem  @clickBottomRight="executarSom('Cuidados%20em%20casa%20-%2005.wav')"
                      imagemBottomRight="statics/imgs/audio.png"
                      imagem="statics/imgs/cuidados-casa/013.png"/>
         </Coluna>
@@ -55,17 +57,15 @@
 
       <Linha>
         <Coluna>
-          <PVImagem  @clickBottomRight="executarSom('Cuidados%20em%20casa%20-%2005.wav')"
-                     imagemBottomRight="statics/imgs/audio.png"
-                     imagem="statics/imgs/cuidados-casa/015.png"/>
+          <PVImagem imagem="statics/imgs/cuidados-casa/015.png"/>
         </Coluna>
       </Linha><br>
 
       <Linha>
         <Coluna>
-          <PVImagem  @clickBottomRight="executarSom('Cuidados%20em%20casa%20-%2006.wav')"
-                     imagemBottomRight="statics/imgs/audio.png"
-                     imagem="statics/imgs/cuidados-casa/016.png"/>
+          <PVImagem @clickBottomRight="executarSom('Cuidados%20em%20casa%20-%2006.wav')"
+                    imagemBottomRight="statics/imgs/audio.png"
+                    imagem="statics/imgs/cuidados-casa/016.png"/>
         </Coluna>
       </Linha>
 

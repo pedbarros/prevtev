@@ -5,9 +5,8 @@
       spinner-color="white"
       @click="$emit('click', $event)"/>
 
-    <div class="bottomright" v-if="imagemBottomRight">
-      <img :src="imagemBottomRight" width="38" height="39" @click="$emit('clickBottomRight', $event)">
-
+    <div id="bottomright" v-if="imagemBottomRight">
+      <img id="imgAudio" :src="imagemBottomRight" @click="$emit('clickBottomRight', $event)">
     </div>
   </div>
 
@@ -43,12 +42,34 @@
     position: relative;
   }
 
-  .bottomright {
+  #bottomright {
     position: absolute;
     bottom: 1%;
     right: 3%;
     font-size: 18px;
   }
 
+  @media (min-width: 300px) {
+    #imgAudio {
+      width: 27px;
+      height: 28px;
+    }
+  }
+
+
+  @media (min-width: 400px) {
+    #imgAudio {
+      width: 35px;
+      height: 36px;
+    }
+  }
+
+
+  @media (min-width: 700px) {
+    #imgAudio {
+      width: 65px;
+      height: 66px;
+    }
+  }
 
 </style>

@@ -29,7 +29,7 @@
         <PVImagem @click="$router.push( { name: 'TelaCuidadosCasa' } )" imagem="statics/imgs/menuinicial/007.png"/>
       </Coluna>
 
-      <Coluna coluna="col-5 col-sm-3 justify-around">
+      <Coluna coluna="col-5 col-sm-3 justify-around" v-if="false">
         <PVImagem @click="$router.push( { name: 'TelaAlarmeMedicacao' } )"
                   imagem="statics/imgs/menuinicial/008.png"/>
       </Coluna>

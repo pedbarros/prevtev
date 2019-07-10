@@ -1,8 +1,6 @@
 <template>
   <q-toolbar class="bg-primary">
-
-    <!--  <q-btn flat round dense icon="arrow_back" @click="voltar"/>-->
-      <img src="statics/imgs/voltar.png" width="38" @click="voltar">
+    <img v-if="mostrarBotaoVoltar" src="statics/imgs/voltar.png" width="38" @click="voltar">
 
     <q-toolbar-title class="text-center">
       <img :src="imagem">
@@ -17,11 +15,15 @@
       imagem: {
         type: String,
         required: true
+      },
+      mostrarBotaoVoltar: {
+        type: Boolean,
+        default: true
       }
     },
 
-    methods:{
-      voltar(){
+    methods: {
+      voltar() {
         this.$router.go(-1)
       }
     }

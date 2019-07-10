@@ -2,9 +2,16 @@
 const routes = [
   {
     path: '/',
+    component: () => import('layouts/MyLayoutSemBotaoToolbar.vue'),
+    children: [
+      { path: '', component: () => import('pages/TelaTev.vue') }
+    ]
+  },
+
+  {
+    path: '/',
     component: () => import('layouts/MyLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/TelaTev.vue') },
       { path: 'menu-inicial', name:'TelaMenuInicial',  component: () => import('pages/TelaMenuInicial.vue') },
       { path: 'o-que-tev', name:'TelaOQueTEV',  component: () => import('pages/TelaOQueTEV.vue') },
       { path: 'quando-suspeitar', name:'TelaQuandoSuspeitar',  component: () => import('pages/TelaQuandoSuspeitar.vue') },

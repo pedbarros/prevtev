@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <PVToolbar imagem="statics/imgs/logo-toolbar.png"></PVToolbar>
+      <PVToolbar imagem="statics/imgs/logo-toolbar.png"/>
     </q-header>
 
     <q-page-container>

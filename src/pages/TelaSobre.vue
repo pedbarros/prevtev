@@ -33,12 +33,10 @@
   import PVImagem from "../components/PVImagem";
   import Titulo from "../components/Shared/Titulo";
   import Container from "../components/Shared/Container";
-  import audioMixin from "../mixins/audioMixin";
 
   export default {
     name: "TelaSobre",
-    components: {Container, Titulo, PVImagem, Coluna, Linha, Conteudo},
-    mixins: [audioMixin]
+    components: {Container, Titulo, PVImagem, Coluna, Linha, Conteudo}
 
   }
 </script>

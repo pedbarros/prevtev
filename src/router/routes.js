@@ -19,7 +19,9 @@ const routes = [
       { path: 'consequencias', name:'TelaConsequencias',  component: () => import('pages/TelaConsequencias.vue') },
       { path: 'cuidados-casa', name:'TelaCuidadosCasa',  component: () => import('pages/TelaCuidadosCasa.vue') },
       { path: 'alarme-medicacao', name:'TelaAlarmeMedicacao',  component: () => import('pages/TelaAlarmeMedicacao.vue') },
-      { path: 'lista-medicamentos', name:'TelaListaMedicamentos',  component: () => import('pages/TelaListaMedicamentos.vue') }
+      { path: 'lista-medicamentos', name:'TelaListaMedicamentos',  component: () => import('pages/TelaListaMedicamentos.vue') },
+      { path: 'sobre-app', name:'TelaSobre',  component: () => import('pages/TelaSobre.vue') },,
+      { path: 'como-navegar', name:'TelaComoNavegar',  component: () => import('pages/TelaComoNavegar.vue') },
     ]
   },
 

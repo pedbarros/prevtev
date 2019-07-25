@@ -17,7 +17,7 @@
 
     mounted(){
       this.$refs.videoTag.addEventListener('play', () => {
-        console.log("Okok")
+        //console.log("Okok")
       }, false);
     }
 

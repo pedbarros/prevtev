@@ -1,5 +1,5 @@
 <template>
-  <q-page :padding="paddingPage"  id="layout">
+  <q-page :padding="paddingPage"  id="layout" >
     <div :class="classeConteudo">
       <slot></slot>
     </div>

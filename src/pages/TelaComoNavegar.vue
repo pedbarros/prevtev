@@ -1,25 +1,19 @@
 <template>
   <Conteudo classeConteudo="full-height" :paddingPage="false">
-    <Titulo imagem="statics/imgs/sobre-app/001.png"/>
+    <Titulo imagem="statics/imgs/como-navegar/001.png"/>
 
     <div class="q-pl-sm q-pr-sm">
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/sobre-app/002.png"/>
+          <PVImagem imagem="statics/imgs/como-navegar/002.png"/>
         </Coluna>
       </Linha>
       <Linha>
         <Coluna>
-          <PVImagem imagem="statics/imgs/sobre-app/003.png"/>
+          <PVImagem imagem="statics/imgs/como-navegar/003.png"/>
         </Coluna>
       </Linha>
 
-
-      <Linha>
-        <Coluna>
-          <PVImagem imagem="statics/imgs/sobre-app/004.png"/>
-        </Coluna>
-      </Linha>
 
 
     </div>
@@ -33,19 +27,10 @@
   import PVImagem from "../components/PVImagem";
   import Titulo from "../components/Shared/Titulo";
   import Container from "../components/Shared/Container";
-  import audioMixin from "../mixins/audioMixin";
 
   export default {
-    name: "TelaSobre",
-    components: {Container, Titulo, PVImagem, Coluna, Linha, Conteudo},
-    mixins: [audioMixin]
+    name: "TelaComoNavegar",
+    components: {Container, Titulo, PVImagem, Coluna, Linha, Conteudo}
 
   }
 </script>
-
-<style scoped>
-  video {
-    width: 80% !important;
-    height: 50% !important;
-  }
-</style>

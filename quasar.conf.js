@@ -93,7 +93,16 @@ module.exports = function (ctx) {
         'QTd',
 
         'QSelect',
-        'QTime'
+        'QTime',
+
+
+        'QTabs',
+        'QTab',
+        'QRouteTab',
+
+
+        'QFooter'
+
       ],
 
       directives: [

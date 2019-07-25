@@ -6,7 +6,7 @@
 
     <Linha add-class="justify-around">
       <Coluna coluna="col-xs-7 col-sm-6 col-md-6">
-        <PVImagem widht="5px" @click="clik" imagem="statics/imgs/tev/corpoHumanoTev.png"></PVImagem>
+        <PVImagem widht="5px" imagem="statics/imgs/tev/corpoHumanoTev.png"></PVImagem>
       </Coluna>
     </Linha>
 
@@ -33,13 +33,5 @@
   export default {
     name: "Tev",
     components: {Titulo, Conteudo, PVImagem, Coluna, Linha},
-    methods: {
-      clik() {
-        let v = JSON.stringify([{nome: 'pedro', idade: 123}])
-        LocalStorage.set('teste', v)
-        let value = LocalStorage.getItem('teste')
-        console.log(value)
-      }
-    }
   }
 </script>

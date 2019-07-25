@@ -18,7 +18,7 @@
       </Coluna>
 
       <Coluna coluna="col-5 col-sm-3 justify-around">
-        <PVImagem  @click="$router.push( { name: 'TelaConsequencias' } )" imagem="statics/imgs/menuinicial/006.png"/>
+        <PVImagem @click="$router.push( { name: 'TelaConsequencias' } )" imagem="statics/imgs/menuinicial/006.png"/>
       </Coluna>
     </Linha>
 
@@ -49,7 +49,7 @@
 
     components: {Coluna, Linha, Conteudo, PVImagem},
 
-    data(){
+    data() {
       return {
         mostrarVideo: ''
       }
@@ -70,4 +70,3 @@
     }
   }
 </script>
-

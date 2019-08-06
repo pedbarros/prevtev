@@ -6,42 +6,9 @@
     <div class="q-pl-sm q-pr-sm">
       <Linha>
         <Coluna>
-          <PVImagem  @clickBottomRight="executarSom('Alarme%20de%20MedicaÆo.wav')"
-                     imagemBottomRight="statics/imgs/audio.png"
-                     imagem="statics/imgs/alarme/003.png"/>
+          <PVImagem imagem="statics/imgs/alarme/004.png"/>
         </Coluna>
       </Linha>
-
-      <Container cor="#7887C4" altura="320px" class="q-pa-sm">
-        <q-input color="grey-1" rounded outlined
-                 v-model="medicamento.nome" label="Medicamento"
-                 class="q-mt-sm"
-                 :rules="[val => !!val || 'O medicamento é obrigatório']"/>
-        <q-input color="grey-1" rounded outlined type="number"
-                 v-model="medicamento.qtdDias" label="Quantidade de dias"
-                 class="q-mt-sm"
-                 :rules="[val => !!val || 'A quantidade de dias é obrigatória']"/>
-
-        <Linha>
-          <Coluna coluna="col-4">
-            <q-select color="grey-1" rounded outlined :options="optionsHoras" v-model="hora" class="q-mt-md"/>
-          </Coluna>
-
-          <Coluna coluna="col-4">
-            <q-select color="grey-1" rounded outlined :options="optionsMinutos" v-model="minuto" class="q-mt-md"/>
-          </Coluna>
-
-          <Coluna coluna="col-4">
-            <div class="q-pa-xs q-mt-md">
-              <q-btn round color="primary" icon="add" :disable="!validarCamposAddMedicamento" @click="acessoRestrito(1)"/>
-              <q-btn round color="primary" icon="list" @click="acessoRestrito(2)"/>
-            </div>
-          </Coluna>
-        </Linha>
-
-        <q-btn color="primary" class="full-width q-mt-md" @click="salvarAgendamento()" label="Salvar"
-               :disable="!validarCamposAlarme"/>
-      </Container>
     </div>
 
 

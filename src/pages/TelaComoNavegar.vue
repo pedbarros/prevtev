@@ -1,7 +1,6 @@
 <template>
   <Conteudo classeConteudo="full-height" :paddingPage="false">
     <Titulo imagem="statics/imgs/como-navegar/001.png"/>
-
     <div class="q-pl-sm q-pr-sm">
       <Linha>
         <Coluna>
@@ -13,9 +12,6 @@
           <PVImagem imagem="statics/imgs/como-navegar/003.png"/>
         </Coluna>
       </Linha>
-
-
-
     </div>
   </Conteudo>
 </template>

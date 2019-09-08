@@ -1,5 +1,5 @@
 <template>
-  <q-footer elevated>
+  <q-footer elevated style="background-color: #0086D4;">
     <slot/>
   </q-footer>
 </template>
